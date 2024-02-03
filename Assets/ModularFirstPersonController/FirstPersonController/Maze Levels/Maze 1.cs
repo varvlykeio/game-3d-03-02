@@ -43,6 +43,7 @@ public class Maze1 : MonoBehaviour
 			if(FirstRun == true) {
 
 				ImgMaze1.enabled = true;
+				//spera
 				
 			}
 			else{
