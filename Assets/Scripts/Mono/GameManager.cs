@@ -5,11 +5,13 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using QuizVars;
 
 public class GameManager : MonoBehaviour {
 
     #region Variables
 
+    public              bool                levelcheck              = false;
     private             Data                data                    = new Data();
 
     [SerializeField]    GameEvents          events                  = null;
@@ -68,19 +70,27 @@ public class GameManager : MonoBehaviour {
     /// <summary>
     /// Function that is called when the script instance is being loaded.
     /// </summary>
-    private void Start()
-    {
-        events.StartupHighscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
-
-        timerDefaultColor = timerText.color;
-        LoadData();
-
-        timerStateParaHash = Animator.StringToHash("TimerState");
+   
+    void Start() {
+          events.StartupHighscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
+		timerDefaultColor = timerText.color;
 
         var seed = UnityEngine.Random.Range(int.MinValue, int.MaxValue);
         UnityEngine.Random.InitState(seed);
+        timerStateParaHash = Animator.StringToHash("TimerState");
+	}
+    private void Update()
+    {
+        Quiz MyInstance = new Quiz();
 
+        levelcheck = MyInstance.QuizStart;
+
+        
+
+        if (levelcheck == true){
+        LoadData();
         Display();
+         }
     }
 
     #endregion

@@ -65,9 +65,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\Maze Levels\Maze 1.cs" />
+    <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\Quiz Levels\Quiz Ap-Dis.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\Maze Levels\Maze 3.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\Maze Levels\Movement.cs" />
-    <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\Quiz Levels\Appear-Disappear Quizzzzz.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\Control Center.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\Maze Levels\Maze 2.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\FirstPersonController.cs" />
