@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ModularFirstPersonController\FirstPersonController\Maze Levels\MazeDefRef.asmref" />
+    <None Include="Assets\ModularFirstPersonController\FirstPersonController\Quiz Levels\QuizDefRef.asmref" />
     <None Include="Assets\ModularFirstPersonController\FirstPersonController\FPCDef.asmdef" />
   </ItemGroup>
   <ItemGroup>

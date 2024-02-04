@@ -9,6 +9,7 @@ using UnityEngine.UI;
 using Unity.VisualScripting;
 using MyVars;
 
+
 public class Maze1 : MonoBehaviour
 
 {
@@ -34,6 +35,7 @@ public class Maze1 : MonoBehaviour
 		//Create an instance of MyClass
         MyVarsClass myInstance = new MyVarsClass();
 
+
         // Access the variable from MyClass       
 		levelcheck = myInstance.Maze1;
 		//fpc = myInstance.fpc;
@@ -43,7 +45,7 @@ public class Maze1 : MonoBehaviour
 			if(FirstRun == true) {
 
 				ImgMaze1.enabled = true;
-				//spera
+				FirstRun = false;
 				
 			}
 			else{

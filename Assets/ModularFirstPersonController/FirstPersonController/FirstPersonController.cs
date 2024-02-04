@@ -8,6 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using QuizVars;
 
 #if UNITY_EDITOR
     using UnityEditor;
@@ -33,6 +34,7 @@ public class FirstPersonController : MonoBehaviour
     public bool crosshair = true;
     public Sprite crosshairImage;
     public Color crosshairColor = Color.white;
+    public bool CursorLock;
 
     // Internal Variables
     private float yaw = 0.0f;
@@ -204,6 +206,27 @@ public class FirstPersonController : MonoBehaviour
 
     private void Update()
     {
+
+
+        #region Cursor
+
+        Quiz myInstance = new Quiz();
+    
+        CursorLock = myInstance.CursorLock;
+
+
+        if (CursorLock == false) {
+            lockCursor = false;
+        }
+        else {
+
+            lockCursor = true;
+        }
+
+
+        #endregion
+
+
         #region Camera
 
         // Control camera movement
