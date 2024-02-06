@@ -15,7 +15,7 @@ namespace MyVars{
         public bool Maze2 = false;
         public bool Maze3 = false;
         public bool Maze4 = true;
-        public bool Quizlevel = true;
+        public bool Quizlevel = false;
 
         
         public GameObject fpc;

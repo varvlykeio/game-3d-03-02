@@ -5,7 +5,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using QuizVars;
+//using QuizVars;
 
 public class GameManager : MonoBehaviour {
 
@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour {
         UnityEngine.Random.InitState(seed);
         timerStateParaHash = Animator.StringToHash("TimerState");
 	}
-    private void Update()
+    /*private void Update()
     {
         Quiz MyInstance = new Quiz();
 
@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour {
         LoadData();
         Display();
          }
-    }
+    }*/
 
     #endregion
 
