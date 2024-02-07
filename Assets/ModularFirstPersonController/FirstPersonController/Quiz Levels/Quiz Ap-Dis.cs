@@ -11,15 +11,25 @@ public class Quiz : MonoBehaviour {
 	public GameObject Content;
 	public bool FirstRun;
 	public bool CursorLock;
-	public bool QuizStart = false;
+	public bool QuizStart = true;
 
 
 	void Start () {
 
-		Content.SetActive(false) ;
-		levelcheck = false;
+		//Content.SetActive(false) ;
+		levelcheck = true; //True will be changed to a bool that determines whether the level will run or not
 		FirstRun = true;
 		CursorLock = true;
+
+		if (levelcheck == true) {
+
+			if (FirstRun == true) {
+				
+
+				QuizStart = true;
+				
+			}
+		}
 		
 	}
 
@@ -36,11 +46,11 @@ public class Quiz : MonoBehaviour {
 		
 
 	
-		while (levelcheck == true) {
+		if (levelcheck == true) {
 
 			if (FirstRun == true) {
 
-				Content.SetActive(true);
+				//Content.SetActive(true);
 				FirstRun = false;
 				
 				CursorLock = false;

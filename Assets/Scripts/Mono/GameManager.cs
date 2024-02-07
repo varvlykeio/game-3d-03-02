@@ -5,12 +5,16 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-//using QuizVars;
+using QuizVars;
+using Unity.VisualScripting;
+using System;
 
 public class GameManager : MonoBehaviour {
 
     #region Variables
 
+    public              bool                levlchecksum              = true;
+    public              bool                levlcheck2              = true;   
     public              bool                levelcheck              = false;
     private             Data                data                    = new Data();
 
@@ -71,27 +75,48 @@ public class GameManager : MonoBehaviour {
     /// Function that is called when the script instance is being loaded.
     /// </summary>
    
-    void Start() {
-          events.StartupHighscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
-		timerDefaultColor = timerText.color;
+    /*void Start() {
+        events.StartupHighscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
+       
+
+        timerDefaultColor = timerText.color;
+    
+        timerStateParaHash = Animator.StringToHash("TimerState");
 
         var seed = UnityEngine.Random.Range(int.MinValue, int.MaxValue);
         UnityEngine.Random.InitState(seed);
-        timerStateParaHash = Animator.StringToHash("TimerState");
-	}
-    /*private void Update()
+
+        
+	}*/
+    private void Update()
     {
+
         Quiz MyInstance = new Quiz();
 
         levelcheck = MyInstance.QuizStart;
+        levlchecksum = levelcheck & levlcheck2;
+        Debug.Log("Levelchecksum Value: " + levlchecksum + "\nLevelcheck Value: " + levelcheck + "\n Levlcheck2 Value: " + levlcheck2);
 
+
+        if (levlchecksum == true){
+
+        events.StartupHighscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
+
+        timerDefaultColor = timerText.color;
+        LoadData();
+
+        timerStateParaHash = Animator.StringToHash("TimerState");
+
+        var seed = UnityEngine.Random.Range(int.MinValue, int.MaxValue);
+        UnityEngine.Random.InitState(seed);
+
+        Display();
+        levlcheck2 = false;
         
 
-        if (levelcheck == true){
-        LoadData();
-        Display();
+        
          }
-    }*/
+    }
 
     #endregion
 
