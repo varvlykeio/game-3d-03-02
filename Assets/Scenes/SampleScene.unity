@@ -3948,7 +3948,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 310, y: -94}
+  m_AnchoredPosition: {x: 332, y: 161}
   m_SizeDelta: {x: 140, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &516774705
@@ -4495,15 +4495,15 @@ RectTransform:
   m_GameObject: {fileID: 626759775}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.99857, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 380032909}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.5, y: 0.5}
+  m_SizeDelta: {x: -1, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &626759777
 MonoBehaviour:
@@ -5795,6 +5795,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a143d484c4a07c149a0985086b75d989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levlchecksum: 1
+  levlcheck2: 1
+  levelcheck: 0
   events: {fileID: 11400000, guid: 8e0c26d6986631643bcc9fe8626c36ae, type: 2}
   timerAnimtor: {fileID: 1704503191}
   timerText: {fileID: 2092137027}
@@ -6632,8 +6635,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15178dabb78ffa94faadf87124e78e3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isImgOn: 0
+  levelcheck: 0
   Content: {fileID: 380032908}
+  FirstRun: 0
+  CursorLock: 0
+  QuizStart: 0
 --- !u!4 &1054132357 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 414768, guid: 45b9a5b6a96ed4d0699b4faff594d8c4, type: 3}
@@ -10075,6 +10081,7 @@ MonoBehaviour:
   Maze2: 1
   Maze3: 0
   Maze4: 0
+  Quizlevel: 0
   fpc: {fileID: 1700932311}
 --- !u!4 &1557795764 stripped
 Transform:
@@ -10489,7 +10496,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0, y: -0.000045776367}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1001 &1641854396
