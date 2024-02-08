@@ -34,7 +34,7 @@ public class FirstPersonController : MonoBehaviour
     public bool crosshair = true;
     public Sprite crosshairImage;
     public Color crosshairColor = Color.white;
-    public bool CursorLock;
+   // public bool CursorLock;
 
     // Internal Variables
     private float yaw = 0.0f;
@@ -154,10 +154,10 @@ public class FirstPersonController : MonoBehaviour
 
     void Start()
     {
-        if(lockCursor)
+       /*if(lockCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
-        }
+        }*/
 
         if(crosshair)
         {
@@ -206,25 +206,14 @@ public class FirstPersonController : MonoBehaviour
 
     private void Update()
     {
+        bool quiz;
+         Quiz NewInstance = new Quiz();
+         quiz = NewInstance.QuizStart;
 
-
-        #region Cursor
-
-        Quiz myInstance = new Quiz();
-    
-        CursorLock = myInstance.CursorLock;
-
-
-        if (CursorLock == false) {
-            lockCursor = false;
-        }
-        else {
-
-            lockCursor = true;
-        }
-
-
-        #endregion
+         if (quiz == true){
+            Cursor.lockState = CursorLockMode.None;
+         }
+         else Cursor.lockState = CursorLockMode.Locked;
 
 
         #region Camera
@@ -596,7 +585,7 @@ public class FirstPersonController : MonoBehaviour
         fpc.maxLookAngle = EditorGUILayout.Slider(new GUIContent("Max Look Angle", "Determines the max and min angle the player camera is able to look."), fpc.maxLookAngle, 40, 90);
         GUI.enabled = true;
 
-        fpc.lockCursor = EditorGUILayout.ToggleLeft(new GUIContent("Lock and Hide Cursor", "Turns off the cursor visibility and locks it to the middle of the screen."), fpc.lockCursor);
+        //fpc.lockCursor = EditorGUILayout.ToggleLeft(new GUIContent("Lock and Hide Cursor", "Turns off the cursor visibility and locks it to the middle of the screen."), fpc.lockCursor);
 
         fpc.crosshair = EditorGUILayout.ToggleLeft(new GUIContent("Auto Crosshair", "Determines if the basic crosshair will be turned on, and sets is to the center of the screen."), fpc.crosshair);
 
@@ -762,8 +751,7 @@ public class FirstPersonController : MonoBehaviour
             SerFPC.ApplyModifiedProperties();
         }
     }
-}
-
+    }
 
 // spera
 

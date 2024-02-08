@@ -71,6 +71,7 @@
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\Control Center.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\Maze Levels\Maze 2.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\FirstPersonController.cs" />
+    <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\QuizChecker.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\Maze Levels\Maze 4.cs" />
   </ItemGroup>
   <ItemGroup>

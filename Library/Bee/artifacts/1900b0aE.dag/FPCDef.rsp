@@ -348,6 +348,7 @@
 "Assets/ModularFirstPersonController/FirstPersonController/Maze Levels/Maze 4.cs"
 "Assets/ModularFirstPersonController/FirstPersonController/Maze Levels/Movement.cs"
 "Assets/ModularFirstPersonController/FirstPersonController/Quiz Levels/Quiz Ap-Dis.cs"
+"Assets/ModularFirstPersonController/FirstPersonController/QuizChecker.cs"
 -langversion:9.0
 
 /deterministic

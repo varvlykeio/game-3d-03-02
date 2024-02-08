@@ -11,30 +11,26 @@ public class Quiz : MonoBehaviour {
 	public GameObject Content;
 	public bool FirstRun;
 	public bool CursorLock;
-	public bool QuizStart = true;
+	public bool QuizStart;
 
+	
 
 	void Start () {
 
-		//Content.SetActive(false) ;
-		levelcheck = true; //True will be changed to a bool that determines whether the level will run or not
+		
+		Content.SetActive(false) ;
+		
 		FirstRun = true;
-		CursorLock = true;
 
 		if (levelcheck == true) {
 
-			if (FirstRun == true) {
-				
-
 				QuizStart = true;
-				
-			}
+				CursorLock = true;				
 		}
 		
 	}
 
 	void Update () {
-
 
 		//Create an instance of MyClass	
 		 MyVarsClass myInstance = new MyVarsClass();
@@ -43,15 +39,15 @@ public class Quiz : MonoBehaviour {
 
 		// Access the variable from MyClass 
 		 levelcheck = myInstance.Quizlevel;
-		
+		//Debug.Log("levelcheck: " + levelcheck);
 
 	
 		if (levelcheck == true) {
-
+			
 			if (FirstRun == true) {
 
 				//Content.SetActive(true);
-				FirstRun = false;
+				FirstRun = true;
 				
 				CursorLock = false;
 

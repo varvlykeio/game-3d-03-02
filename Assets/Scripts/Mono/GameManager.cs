@@ -95,7 +95,8 @@ public class GameManager : MonoBehaviour {
 
         levelcheck = MyInstance.QuizStart;
         levlchecksum = levelcheck & levlcheck2;
-        Debug.Log("Levelchecksum Value: " + levlchecksum + "\nLevelcheck Value: " + levelcheck + "\n Levlcheck2 Value: " + levlcheck2);
+
+        //Debug.Log("Levelchecksum Value: " + levlchecksum + "\nLevelcheck Value: " + levelcheck + "\n Levlcheck2 Value: " + levlcheck2);
 
 
         if (levlchecksum == true){
