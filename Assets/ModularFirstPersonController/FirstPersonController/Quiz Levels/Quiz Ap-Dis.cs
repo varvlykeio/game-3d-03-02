@@ -30,7 +30,8 @@ public class Quiz : MonoBehaviour {
 		/*if (levelcheck == true) {
 
 				QuizStart = true;
-				CursorLock = true;				
+				CursorLock = true;
+				/sperra				
 		}
 		*/
 		
