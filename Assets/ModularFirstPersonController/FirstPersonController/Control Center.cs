@@ -24,10 +24,10 @@ namespace MyVars{
         public void Update(){
 
             QuizCols NewInstance = new();
-            Quizlevel = NewInstance.pusher;
+            Quizlevel = NewInstance.activate;
         
             
-            Debug.Log(Quizlevel);
+            //Debug.Log(Quizlevel);
 
         }
     }

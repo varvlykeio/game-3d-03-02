@@ -9,9 +9,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using QuizVars;
+using QuizCol;
+
 
 #if UNITY_EDITOR
-    using UnityEditor;
+using UnityEditor;
     using System.Net;
 #endif
 
@@ -169,6 +171,8 @@ public class FirstPersonController : MonoBehaviour
             crosshairObject.gameObject.SetActive(false);
         }
 
+
+
         #region Sprint Bar
 
         sprintBarCG = GetComponentInChildren<CanvasGroup>();
@@ -203,14 +207,18 @@ public class FirstPersonController : MonoBehaviour
     }
 
     float camRotation;
-
+    Quiz scriptInstance = null;
     private void Update()
     {
         bool quiz;
-         Quiz NewInstance = new Quiz();
-         quiz = NewInstance.QuizStart;
+         //Quiz NewInstance = new Quiz();
+         //quiz = NewInstance.QuizStart;
 
-         if (quiz == true){
+        GameObject tempObj = GameObject.Find("FirstPersonController");
+        scriptInstance = tempObj.GetComponent<Quiz>();
+
+        quiz = scriptInstance.CursorLock;
+         if (quiz == false){
             Cursor.lockState = CursorLockMode.None;
          }
          else Cursor.lockState = CursorLockMode.Locked;

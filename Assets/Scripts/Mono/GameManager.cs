@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 using QuizVars;
 using Unity.VisualScripting;
 using System;
+using QuizCol;
 
 public class GameManager : MonoBehaviour {
 
@@ -88,14 +89,21 @@ public class GameManager : MonoBehaviour {
 
         
 	}*/
-    private void Update()
+    QuizCols scriptInstance = null;
+    public void Update()
     {
 
-        Quiz MyInstance = new Quiz();
+        GameObject tempObj = GameObject.Find("Fan_01 (1)");
+        scriptInstance = tempObj.GetComponent<QuizCols>();
+        //QuizCols NewInstance = new QuizCols();
+        //Quiz MyInstance = new Quiz();
 
-        levelcheck = MyInstance.QuizStart;
+        
+
+        levelcheck = scriptInstance.pusher;
+        
         levlchecksum = levelcheck & levlcheck2;
-
+        Debug.Log("DD" + levelcheck + "CC" + levlchecksum);
         //Debug.Log("Levelchecksum Value: " + levlchecksum + "\nLevelcheck Value: " + levelcheck + "\n Levlcheck2 Value: " + levlcheck2);
 
 
