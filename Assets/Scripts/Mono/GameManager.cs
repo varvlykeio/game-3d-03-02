@@ -98,12 +98,15 @@ public class GameManager : MonoBehaviour {
         //QuizCols NewInstance = new QuizCols();
         //Quiz MyInstance = new Quiz();
 
+
+
+
         
 
         levelcheck = scriptInstance.pusher;
         
         levlchecksum = levelcheck & levlcheck2;
-        Debug.Log("DD" + levelcheck + "CC" + levlchecksum);
+        //Debug.Log("DD" + levelcheck + "CC" + levlchecksum);
         //Debug.Log("Levelchecksum Value: " + levlchecksum + "\nLevelcheck Value: " + levelcheck + "\n Levlcheck2 Value: " + levlcheck2);
 
 

@@ -4,6 +4,7 @@ using System.Collections;
 using MyVars;
 using UnityEditor.Build.Content;
 using QuizCol;
+using Codice.CM.Common;
 
 namespace QuizVars{
 public class Quiz : MonoBehaviour {
@@ -20,20 +21,12 @@ public class Quiz : MonoBehaviour {
 
 		GameObject tempObj = GameObject.Find("Fan_01 (1)");
         scriptInstance = tempObj.GetComponent<QuizCols>();
-		levelcheck = scriptInstance.pusher;
+		levelcheck = scriptInstance.activate;
 		
 		Content.SetActive(false) ;
 		
 		FirstRun = true;
 		CursorLock = true;
-
-		/*if (levelcheck == true) {
-
-				QuizStart = true;
-				CursorLock = true;
-				/sperra				
-		}
-		*/
 		
 	}
 
@@ -54,7 +47,7 @@ public class Quiz : MonoBehaviour {
 	
 		if (levelcheck == true) {
 			
-			if (FirstRun == true) {
+			//if (FirstRun == true) {	
 
 				Content.SetActive(true);
 				FirstRun = true;
@@ -62,16 +55,11 @@ public class Quiz : MonoBehaviour {
 				CursorLock = false;
 
 				QuizStart = true;
+			
 				
-			}
+			//}
 
-			else {
-
-
-
-				
-				
-			}
+			//else {}
 		}
 	}
 }
