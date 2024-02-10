@@ -220,8 +220,9 @@ public class FirstPersonController : MonoBehaviour
         quiz = scriptInstance.CursorLock;
          if (quiz == false){
             Cursor.lockState = CursorLockMode.None;
+            cameraCanMove = false;
          }
-         else Cursor.lockState = CursorLockMode.Locked;
+         else {Cursor.lockState = CursorLockMode.Locked; cameraCanMove = true; }
 
 
         #region Camera
@@ -585,7 +586,7 @@ public class FirstPersonController : MonoBehaviour
 
         fpc.playerCamera = (Camera)EditorGUILayout.ObjectField(new GUIContent("Camera", "Camera attached to the controller."), fpc.playerCamera, typeof(Camera), true);
         fpc.fov = EditorGUILayout.Slider(new GUIContent("Field of View", "The camera’s view angle. Changes the player camera directly."), fpc.fov, fpc.zoomFOV, 179f);
-        fpc.cameraCanMove = EditorGUILayout.ToggleLeft(new GUIContent("Enable Camera Rotation", "Determines if the camera is allowed to move."), fpc.cameraCanMove);
+        //fpc.cameraCanMove = EditorGUILayout.ToggleLeft(new GUIContent("Enable Camera Rotation", "Determines if the camera is allowed to move."), fpc.cameraCanMove);
 
         GUI.enabled = fpc.cameraCanMove;
         fpc.invertCamera = EditorGUILayout.ToggleLeft(new GUIContent("Invert Camera Rotation", "Inverts the up and down movement of the camera."), fpc.invertCamera);
