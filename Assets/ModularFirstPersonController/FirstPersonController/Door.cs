@@ -74,7 +74,7 @@ public class Door : MonoBehaviour
             }
         }
     public void OnTriggerEnter(){
-        
+        //e
         activate = true;
         textE.SetActive(true);
         
