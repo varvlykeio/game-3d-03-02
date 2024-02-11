@@ -5501,8 +5501,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.0329661, y: 4.0479174, z: 1}
-  m_Center: {x: -1.0164844, y: 1.5239589, z: 2.2229871e-15}
+  m_Size: {x: 7.989644, y: 4.0479174, z: 1.119537}
+  m_Center: {x: -3.4948373, y: 1.5239589, z: 0.97642916}
 --- !u!1 &793235821
 GameObject:
   m_ObjectHideFlags: 0
@@ -6360,7 +6360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6507386, guid: 088b5f04d52a542ec975e88d7d9934f5, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6699,7 +6699,7 @@ MonoBehaviour:
   Maze4: 1
   Quizlevel: 0
   fpc: {fileID: 0}
-  TextE: {fileID: 0}
+  TextE: {fileID: 1229897055}
 --- !u!4 &1003114185
 Transform:
   m_ObjectHideFlags: 0
@@ -7463,7 +7463,7 @@ MonoBehaviour:
   rotation: {x: 0, y: 0, z: 0}
   IsOpen: 0
   Speed: 3
-  SlideDirection: {x: 0, y: 0, z: -1}
+  SlideDirection: {x: -1, y: 0, z: 0}
   SlideAmount: 2.6
   activate: 0
 --- !u!65 &1126348176
@@ -7485,8 +7485,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5.267376, y: 4.070055, z: 0.8381119}
-  m_Center: {x: -2.133688, y: 1.535028, z: 0.85107803}
+  m_Size: {x: 12.291918, y: 4.070055, z: 1}
+  m_Center: {x: -5.645959, y: 1.535028, z: 1}
 --- !u!1 &1127992078
 GameObject:
   m_ObjectHideFlags: 0
@@ -10981,7 +10981,7 @@ MonoBehaviour:
   rotation: {x: 0, y: 0, z: 0}
   IsOpen: 0
   Speed: 3
-  SlideDirection: {x: 0, y: 0, z: -1}
+  SlideDirection: {x: 1, y: 0, z: 0}
   SlideAmount: 2.6
   activate: 0
 --- !u!65 &1592872267
@@ -11003,8 +11003,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.0302505, y: 4.070055, z: 1}
-  m_Center: {x: -3.7593117, y: 1.535028, z: 0}
+  m_Size: {x: 9.12104, y: 4.070055, z: 1}
+  m_Center: {x: -4.3672695, y: 1.535028, z: 0}
 --- !u!1001 &1611946597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15018,8 +15018,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.4095175, y: 3.9980657, z: 0}
-  m_Center: {x: -1.7906052, y: 1.4990329, z: -0.5}
+  m_Size: {x: 9.542584, y: 3.9980657, z: 3.0871265}
+  m_Center: {x: -5.357143, y: 1.4990329, z: 0.17124844}
 --- !u!114 &2103873355
 MonoBehaviour:
   m_ObjectHideFlags: 0
