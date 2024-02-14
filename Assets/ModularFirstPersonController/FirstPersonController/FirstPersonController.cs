@@ -207,22 +207,26 @@ public class FirstPersonController : MonoBehaviour
     }
 
     float camRotation;
-    Quiz scriptInstance = null;
+    Quiz scriptInstance = null; // Φτιάχνουμε ένα Instance της κλάσσης στην οποία έχουμε τις μεταβλητές. Πρέπει να έχουμε περικλείσει την κλάση
+                                // σε namespace και να έχουμε γράψει using (όνομα namespace) ,χωρίς τα (),  όπως φαίνεται στην αρχή του κώδικα, γραμμή 12
+                                // Το instance πρέπει να είναι της μορφής "όνομα κλάσης" "ονομα instance" = null;
     private void Update()
     {
         bool quiz;
-         //Quiz NewInstance = new Quiz();
-         //quiz = NewInstance.QuizStart;
 
-        GameObject tempObj = GameObject.Find("FirstPersonController");
-        scriptInstance = tempObj.GetComponent<Quiz>();
+        GameObject tempObj = GameObject.Find("FirstPersonController");  //Τώρα πρέπει να πουμε 
+                                                                        //GameObject "όνομα που θέλουμε να δώσουμε" = GameObject("Όνομα του gameobject που έχουμε επισυνάψει το αρχείο")
+        scriptInstance = tempObj.GetComponent<Quiz>(); // "όνομα του instance που έχουμε φτιάξει" = "ονομα του object".GetComponent<"όνομα κλάσης">();
 
-        quiz = scriptInstance.CursorLock;
-         if (quiz == false){
+        quiz = scriptInstance.CursorLock; // "μεταβλητή του τωρινού αρχείου" = "ονομα του instance που έχουμε φτιάξει"."όνομα μεταβλητής που θέλουμε να μεταφέρουμε"
+        if (quiz == false){
             Cursor.lockState = CursorLockMode.None;
             cameraCanMove = false;
-         }
-         else {Cursor.lockState = CursorLockMode.Locked; cameraCanMove = true; }
+        }
+        else {
+            Cursor.lockState = CursorLockMode.Locked; 
+            cameraCanMove = true; 
+        }
 
 
         #region Camera
