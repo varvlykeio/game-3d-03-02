@@ -98,11 +98,6 @@ public class GameManager : MonoBehaviour {
         //QuizCols NewInstance = new QuizCols();
         //Quiz MyInstance = new Quiz();
 
-
-
-
-        
-
         levelcheck = scriptInstance.pusher;
         
         levlchecksum = levelcheck & levlcheck2;
