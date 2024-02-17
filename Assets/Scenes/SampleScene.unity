@@ -2930,7 +2930,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1993963878}
   m_HandleRect: {fileID: 1993963877}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -11082,7 +11082,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.00006866455}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1001 &1641854396
@@ -14325,8 +14325,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: QUESTION
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e15d49e92d3fd3e45aedf10bdcb1f83b, type: 2}
-  m_sharedMaterial: {fileID: 21700420066152834, guid: e15d49e92d3fd3e45aedf10bdcb1f83b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 42c57c458c3a0574d99d642146cd6b83, type: 2}
+  m_sharedMaterial: {fileID: -3287607578481556547, guid: 42c57c458c3a0574d99d642146cd6b83, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -5,7 +5,7 @@
       <Info>Choose correct answer:</Info>
       <Answers>
         <Answer>
-          <Info>Robots are Humans</Info>
+          <Info>Επιλογή 1</Info>
           <IsCorrect>false</IsCorrect>
         </Answer>
         <Answer>
@@ -19,7 +19,7 @@
       <AddScore>10</AddScore>
     </Question>
     <Question>
-      <Info>Choose food:</Info>
+      <Info>Επίλεξε φαγητό</Info>
       <Answers>
         <Answer>
           <Info>Rice</Info>

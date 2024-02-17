@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Data xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Questions>
+    <Question>
+      <Info>Ερ΄βτηση 3</Info>
+      <Answers>
+        <Answer>
+          <Info>Επιλογή 1</Info>
+          <IsCorrect>true</IsCorrect>
+        </Answer>
+        <Answer>
+          <Info>Option 2</Info>
+          <IsCorrect>false</IsCorrect>
+        </Answer>
+      </Answers>
+      <UseTimer>true</UseTimer>
+      <Timer>95</Timer>
+      <Type>Single</Type>
+      <AddScore>248</AddScore>
+    </Question>
+  </Questions>
+</Data>

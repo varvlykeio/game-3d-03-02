@@ -318,6 +318,7 @@ public class GameManager : MonoBehaviour {
     void LoadData()
     {
         var path = Path.Combine(GameUtility.FileDir, GameUtility.FileName + events.level + ".xml");
+        //var path = Path.Combine(GameUtility.FileDir,"Q3.xml");
         data = Data.Fetch(path);
     }
 
