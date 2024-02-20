@@ -16,8 +16,10 @@ namespace QuizCol {
         public bool pusher;
         public GameObject Text;
 
+
         public void Start(){
             //Debug.Log("Started");
+            Text = GameObject.Find("ScoreCounter (1)");
             Text.SetActive(false);
 
 

@@ -25,8 +25,8 @@ public class Door : MonoBehaviour
 
     private Coroutine AnimationCoroutine;
     public bool activate;
-    private GameObject textE;
-    MyVarsClass scriptInstance = null;
+    public GameObject textE;
+    //MyVarsClass scriptInstance = null;
     
 
 
@@ -39,9 +39,10 @@ public class Door : MonoBehaviour
     }
     public void Start(){
 
-        GameObject tempObj = GameObject.Find("Fan_01 (1)");
-        scriptInstance = tempObj.GetComponent<MyVarsClass>();
-        textE = scriptInstance.TextE;
+        textE = GameObject.Find("ScoreCounter (2)");
+        //GameObject tempObj = GameObject.Find("Fan_01 (1)");
+        //scriptInstance = tempObj.GetComponent<MyVarsClass>();
+        // textE = scriptInstance.TextE;
         textE.SetActive(false);
         
     }
@@ -97,7 +98,6 @@ public class Door : MonoBehaviour
     {
         Vector3 endPosition = StartPosition + SlideAmount * SlideDirection;
         Vector3 startPosition = transform.position;
-        
 
         float time = 0;
         IsOpen = true;
