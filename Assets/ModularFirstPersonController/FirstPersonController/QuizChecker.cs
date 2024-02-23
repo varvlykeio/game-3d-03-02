@@ -20,7 +20,7 @@ namespace QuizCol {
         public void Start(){
             //Debug.Log("Started");
             Text = GameObject.Find("ScoreCounter (1)");
-            Text.SetActive(false);
+            //Text.SetActive(false);
 
 
 
@@ -29,11 +29,7 @@ namespace QuizCol {
             
             activate = true;
             Debug.Log("Activated" + activate);
-            Text.SetActive(true);
-
-
-            
-            
+            //Text.SetActive(true);            
 
         }
 

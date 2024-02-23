@@ -43,7 +43,7 @@ public class Door : MonoBehaviour
         //GameObject tempObj = GameObject.Find("Fan_01 (1)");
         //scriptInstance = tempObj.GetComponent<MyVarsClass>();
         // textE = scriptInstance.TextE;
-        textE.SetActive(false);
+        //textE.SetActive(false);
         
     }
     public void Update()
@@ -77,7 +77,7 @@ public class Door : MonoBehaviour
     public void OnTriggerEnter(){
         //e
         activate = true;
-        textE.SetActive(true);
+        //textE.SetActive(true);
         
 
 
@@ -86,7 +86,7 @@ public class Door : MonoBehaviour
     public void OnTriggerExit(){
 
         activate = false;
-        textE.SetActive(false);
+        //textE.SetActive(false);
 
     }
 

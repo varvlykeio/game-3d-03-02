@@ -37,7 +37,7 @@ public class Maze4 : MonoBehaviour
 		if( levelcheck == true ){
 			if(FirstRun == true) {
 
-				ImgMaze4.enabled = true;
+//				ImgMaze4.enabled = true;
 				FirstRun = false;
 				
 			}
