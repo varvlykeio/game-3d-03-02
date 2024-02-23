@@ -17,7 +17,7 @@ public class GameEvents : ScriptableObject {
 
     [HideInInspector]
     public                  int                                 level                           = 1;
-    public const            int                                 maxLevel                        = 3;
+    public const            int                                 maxLevel                        = 4;
 
     [HideInInspector]
     public                  int                                 CurrentFinalScore               = 0;

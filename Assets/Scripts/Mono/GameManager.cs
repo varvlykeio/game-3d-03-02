@@ -331,6 +331,8 @@ public class GameManager : MonoBehaviour {
         if (events.level == 1) { events.CurrentFinalScore = 0; }
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //SceneManager.LoadScene("Fan_01(1)");
+        
     }
     /// <summary>
     /// Function that is called to quit the application.
