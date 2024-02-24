@@ -28,7 +28,7 @@ namespace QuizCol {
          public void OnTriggerEnter(){
             
             activate = true;
-            Debug.Log("Activated" + activate);
+            //Debug.Log("Activated" + activate);
             //Text.SetActive(true);            
 
         }

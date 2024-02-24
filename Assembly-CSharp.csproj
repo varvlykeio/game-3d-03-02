@@ -69,7 +69,6 @@
     <Compile Include="Assets\Scripts\Utility\GameUtility.cs" />
     <Compile Include="Assets\Scripts\Mono\UIManager.cs" />
     <Compile Include="Assets\_Barking_Dog\Common Scripts\Turn_Move.cs" />
-    <Compile Include="Assets\Scripts\Mono\Game_Manager_Obeject.cs" />
     <Compile Include="Assets\Scripts\Mono\UiAppear.cs" />
     <Compile Include="Assets\Scripts\Mono\GameManager.cs" />
     <Compile Include="Assets\Scripts\Mono\AnswerData.cs" />

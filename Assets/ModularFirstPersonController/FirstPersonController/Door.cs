@@ -42,7 +42,7 @@ public class Door : MonoBehaviour
         textE = GameObject.Find("ScoreCounter (2)");
         //GameObject tempObj = GameObject.Find("Fan_01 (1)");
         //scriptInstance = tempObj.GetComponent<MyVarsClass>();
-        // textE = scriptInstance.TextE;
+        //textE = scriptInstance.TextE;
         //textE.SetActive(false);
         
     }
@@ -52,11 +52,8 @@ public class Door : MonoBehaviour
             
             rotation = transform.eulerAngles;
             
-            
-
-
-
-            if (activate == true){
+            if (activate == true)
+            {
             if (!IsOpen)
             {
                 if (Input.GetKeyDown("e"))
@@ -69,28 +66,28 @@ public class Door : MonoBehaviour
             {
                 if (Input.GetKeyDown("e"))
                 {            
-                AnimationCoroutine = StartCoroutine(DoSlidingClose());
+                    AnimationCoroutine = StartCoroutine(DoSlidingClose());
                 }
             }
             }
         }
-    public void OnTriggerEnter(){
+    /*
+    public void OnTriggerEnter()
+    {
         //e
-        activate = true;
+        //activate = true;
         //textE.SetActive(true);
         
-
-
     }
 
-    public void OnTriggerExit(){
-
-        activate = false;
+    public void OnTriggerExit()
+    {
+        //activate = false;
         //textE.SetActive(false);
 
     }
 
-   
+   */
     
     
 
