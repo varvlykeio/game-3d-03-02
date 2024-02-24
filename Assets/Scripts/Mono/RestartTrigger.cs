@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-//τηλεμεταφορα στον ανεμιστηρα
+//τηλεμεταφορα στον ανεμιστηρα απο το κουιζ
 
 public class RestartTrigger : MonoBehaviour 
 {
