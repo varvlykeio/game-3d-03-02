@@ -328,11 +328,13 @@ public class GameManager : MonoBehaviour {
     public void RestartGame()
     {
         //If next level is the first level, meaning that we start playing a game again, reset the final score.
-        if (events.level == 1) { events.CurrentFinalScore = 0; }
+        if (events.level == 1) 
+        { 
+            events.CurrentFinalScore = 0; 
+        }
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        //SceneManager.LoadScene("Fan_01(1)");
-        
+       
     }
     /// <summary>
     /// Function that is called to quit the application.

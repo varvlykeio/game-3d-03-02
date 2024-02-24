@@ -356,6 +356,8 @@
 "Assets/Scripts/Mono/AnswerData.cs"
 "Assets/Scripts/Mono/AudioManager.cs"
 "Assets/Scripts/Mono/GameManager.cs"
+"Assets/Scripts/Mono/Game_Manager_Obeject.cs"
+"Assets/Scripts/Mono/RestartTrigger.cs"
 "Assets/Scripts/Mono/UiAppear.cs"
 "Assets/Scripts/Mono/UIManager.cs"
 "Assets/Scripts/ScriptableObject/GameEvents.cs"

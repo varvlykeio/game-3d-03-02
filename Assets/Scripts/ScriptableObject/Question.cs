@@ -1,5 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System.Collections;
+using UnityEngine;
 
 public enum AnswerType { Multi, Single }
 
@@ -39,3 +43,5 @@ public class Question {
         return CorrectAnswers;
     }
 }
+
+
