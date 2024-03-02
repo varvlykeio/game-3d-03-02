@@ -20,7 +20,7 @@ namespace QuizCol {
         public void Start(){
             // δεν χρειαζονται τα σχολια
             //Debug.Log("Started");
-            Text = GameObject.Find("ScoreCounter (1)");
+            //Text = GameObject.Find("Quiz - I");
             //Text.SetActive(false);
 
 
@@ -31,7 +31,9 @@ namespace QuizCol {
             activate = true;
             // δεν χρειαζονται τα σχολια
             //Debug.Log("Activated" + activate);
-            //Text.SetActive(true);            
+            //Τext.SetActive(true); 
+
+               
 
         }
 
@@ -39,13 +41,13 @@ namespace QuizCol {
 
             if (activate == true){
                 if(Input.GetKeyDown("i")){
-                Text.SetActive(false);
+                //Text.SetActive(false);
                 pusher = true;
 
                 }
             }
 
-
+      
 
         }
 

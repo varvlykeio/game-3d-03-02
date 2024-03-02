@@ -19,7 +19,7 @@ public class Quiz : MonoBehaviour {
     QuizCols scriptInstance = null;
 	void Start () {
 
-		GameObject tempObj = GameObject.Find("Fan_01 (1)");
+		GameObject tempObj = GameObject.FindGameObjectWithTag("ATM - Tag");
         scriptInstance = tempObj.GetComponent<QuizCols>();
 		levelcheck = scriptInstance.activate;
 		
@@ -35,7 +35,7 @@ public class Quiz : MonoBehaviour {
 		//Create an instance of MyClass	
 		//MyVarsClass myInstance = new MyVarsClass();
 		
-		GameObject tempObj = GameObject.Find("Fan_01 (1)");
+		GameObject tempObj = GameObject.FindGameObjectWithTag("ATM - Tag");
         scriptInstance = tempObj.GetComponent<QuizCols>();
 		levelcheck = scriptInstance.pusher;
 		

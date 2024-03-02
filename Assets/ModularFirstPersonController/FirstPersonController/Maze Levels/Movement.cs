@@ -37,10 +37,14 @@ public class Movement : MonoBehaviour
       levelcheck2 = myInstance.Maze2;
       levelcheck3 = myInstance.Maze3;
       levelcheck4 = myInstance.Maze4;
+
+
+      //εμφανισει τοποθεσιας
+      //Debug.Log(Cam.transform.position);
 			
 	
 
-      if(a != 1){
+     if(a != 1){
         if(levelcheck1 == true) {
 
           Cam.transform.position = new Vector3(-20, 4, 4);

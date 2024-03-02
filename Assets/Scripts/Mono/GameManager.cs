@@ -9,6 +9,7 @@ using QuizVars;
 using Unity.VisualScripting;
 using System;
 using QuizCol;
+using System.Numerics;
 
 public class GameManager : MonoBehaviour {
 
@@ -35,6 +36,7 @@ public class GameManager : MonoBehaviour {
 
     private             IEnumerator         IE_WaitTillNextRound    = null;
     private             IEnumerator         IE_StartTimer           = null;
+    //Vector3             Vector;
 
     private             bool                IsFinished
     {
@@ -93,15 +95,15 @@ public class GameManager : MonoBehaviour {
     public void Update()
     {
 
-        GameObject tempObj = GameObject.Find("Fan_01 (1)");
+        GameObject tempObj = GameObject.FindGameObjectWithTag("ATM - Tag");
         scriptInstance = tempObj.GetComponent<QuizCols>();
         //QuizCols NewInstance = new QuizCols();
         //Quiz MyInstance = new Quiz();
 
         levelcheck = scriptInstance.pusher;
-        
+
         levlchecksum = levelcheck & levlcheck2;
-        //Debug.Log("DD" + levelcheck + "CC" + levlchecksum);
+        Debug.Log(levlchecksum + "---" + scriptInstance.pusher);
         //Debug.Log("Levelchecksum Value: " + levlchecksum + "\nLevelcheck Value: " + levelcheck + "\n Levlcheck2 Value: " + levlcheck2);
 
 
@@ -118,6 +120,7 @@ public class GameManager : MonoBehaviour {
         UnityEngine.Random.InitState(seed);
 
         Display();
+
         levlcheck2 = false;
         
 
@@ -332,8 +335,8 @@ public class GameManager : MonoBehaviour {
         { 
             events.CurrentFinalScore = 0; 
         }
-
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+       // Vector = (1f, 1f, 1f);
+       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
        
     }
     /// <summary>

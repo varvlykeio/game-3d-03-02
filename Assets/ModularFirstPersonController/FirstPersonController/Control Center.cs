@@ -33,10 +33,12 @@ namespace MyVars{
             
             
 
-            GameObject tempObj = GameObject.Find("Fan_01 (1)");
+            GameObject tempObj = GameObject.FindGameObjectWithTag("ATM - Tag");
             scriptInstance = tempObj.GetComponent<QuizCols>();
             Quizlevel = scriptInstance.activate;
-           /* GameObject tempObjs = GameObject.FindGameObjectWithTag("Door");
+
+            //Debug.Log(Quizlevel);
+            /* GameObject tempObjs = GameObject.FindGameObjectWithTag("Door");
             NewInstance = tempObjs.GetComponent<Door>();
             dooropen = NewInstance.activate;
 
