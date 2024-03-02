@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ScoreCounter (2)
   - Door
+  - coin
   layers:
   - Default
   - TransparentFX

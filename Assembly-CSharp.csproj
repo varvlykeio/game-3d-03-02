@@ -67,12 +67,15 @@
     <Compile Include="Assets\Scripts\Mono\AudioManager.cs" />
     <Compile Include="Assets\_Barking_Dog\Common Scripts\MouseLook.cs" />
     <Compile Include="Assets\Scripts\Utility\GameUtility.cs" />
+    <Compile Include="Assets\Scripts\Mono\Coin.cs" />
     <Compile Include="Assets\Scripts\Mono\UIManager.cs" />
     <Compile Include="Assets\_Barking_Dog\Common Scripts\Turn_Move.cs" />
+    <Compile Include="Assets\Scripts\Mono\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\Mono\UiAppear.cs" />
     <Compile Include="Assets\Scripts\Mono\GameManager.cs" />
     <Compile Include="Assets\Scripts\Mono\AnswerData.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\GameEvents.cs" />
+    <Compile Include="Assets\Scripts\Mono\Player_Coin.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\Question.cs" />
     <Compile Include="Assets\Scripts\Mono\RestartTrigger.cs" />
   </ItemGroup>

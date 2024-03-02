@@ -18,7 +18,6 @@ public class RestartTrigger : MonoBehaviour
 
     void OnTriggerEnter (Collider other)
     {
-        //if (other.gameObject.tag == "Player")
         if(other.CompareTag("Player"))
         {
             the_player.SetActive(false);
@@ -26,7 +25,5 @@ public class RestartTrigger : MonoBehaviour
             the_player.SetActive(false);
         }
     }
-
-
 
 }

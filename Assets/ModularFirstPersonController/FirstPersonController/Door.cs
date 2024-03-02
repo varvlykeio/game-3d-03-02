@@ -40,6 +40,7 @@ public class Door : MonoBehaviour
     public void Start(){
 
         textE = GameObject.Find("ScoreCounter (2)");
+        // δεν χρειαζονται τα σχολια
         //GameObject tempObj = GameObject.Find("Fan_01 (1)");
         //scriptInstance = tempObj.GetComponent<MyVarsClass>();
         //textE = scriptInstance.TextE;
@@ -71,23 +72,24 @@ public class Door : MonoBehaviour
             }
             }
         }
-    /*
+
+    // δεν χρειαζονται τα σχολια
     public void OnTriggerEnter()
     {
         //e
-        //activate = true;
+        activate = true;
         //textE.SetActive(true);
         
     }
 
     public void OnTriggerExit()
     {
-        //activate = false;
+        activate = false;
         //textE.SetActive(false);
 
     }
 
-   */
+
     
     
 

@@ -18,6 +18,7 @@ namespace QuizCol {
 
 
         public void Start(){
+            // δεν χρειαζονται τα σχολια
             //Debug.Log("Started");
             Text = GameObject.Find("ScoreCounter (1)");
             //Text.SetActive(false);
@@ -28,6 +29,7 @@ namespace QuizCol {
          public void OnTriggerEnter(){
             
             activate = true;
+            // δεν χρειαζονται τα σχολια
             //Debug.Log("Activated" + activate);
             //Text.SetActive(true);            
 
@@ -50,8 +52,9 @@ namespace QuizCol {
         public void OnTriggerExit(){
             
             activate = false;
-            Text.SetActive(false);
-            Debug.Log("DeActivated" + activate);
+            // δεν χρειαζονται τα σχολια
+            //Text.SetActive(false);
+            //Debug.Log("DeActivated" + activate);
             
             
 

@@ -46,7 +46,8 @@ public class Quiz : MonoBehaviour {
 
 	
 		if (levelcheck == true) {
-			
+
+			// δεν χρειαζονται τα σχολια			
 			//if (FirstRun == true) {	
 
 				Content.SetActive(true);
