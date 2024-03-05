@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AnswerData : MonoBehaviour {
+public class AnswerData : MonoBehaviour { 
 
     #region Variables
 
