@@ -14,7 +14,7 @@ public class UiAppear : MonoBehaviour
     public GameObject customText;
 
     public void Start(){
-            customText.SetActive(false);
+    customText.SetActive(false);
     }
     
     void OnTriggerEnter(Collider other)

@@ -15,9 +15,13 @@ public class GameManager : MonoBehaviour {
 
     #region Variables
 
-    public              bool                levlchecksum              = true;
-    public              bool                levlcheck2              = true;   
-    public              bool                levelcheck              = false;
+    public              bool                levlchecksum1            = false;
+    public              bool                levlchecksum2            = false;
+    public              bool                levlchecksum3            = false;
+    public              bool                levlcheckturn              = true;   
+    public              bool                levelcheck1             = false;
+    public              bool                levelcheck2             = false;
+    public              bool                levelcheck3             = false;
     private             Data                data                    = new Data();
 
     [SerializeField]    GameEvents          events                  = null;
@@ -91,40 +95,53 @@ public class GameManager : MonoBehaviour {
 
         
 	}*/
-    QuizCols scriptInstance = null;
+    QuizCols1 scriptInstance1 = null;
+    QuizCols2 scriptInstance2 = null;
+    QuizCols3 scriptInstance3 = null;
     public void Update()
     {
 
-        GameObject tempObj = GameObject.FindGameObjectWithTag("ATM - Tag");
-        scriptInstance = tempObj.GetComponent<QuizCols>();
+        GameObject tempObj1 = GameObject.Find("ATM1");
+        scriptInstance1 = tempObj1.GetComponent<QuizCols1>();
+        GameObject tempObj2 = GameObject.Find("ATM2");
+        scriptInstance2 = tempObj2.GetComponent<QuizCols2>();
+        GameObject tempObj3 = GameObject.Find("ATM3");
+        scriptInstance3 = tempObj3.GetComponent<QuizCols3>();
         //QuizCols NewInstance = new QuizCols();
         //Quiz MyInstance = new Quiz();
 
-        levelcheck = scriptInstance.pusher;
+        //levelcheck = scriptInstance.pusher;
+        levelcheck1 = scriptInstance1.pusher1;
+        levelcheck2 = scriptInstance2.pusher2;
+        levelcheck3 = scriptInstance3.pusher3;
+        levlchecksum1 = levelcheck1 && levlcheckturn;
+        levlchecksum2 = levelcheck2 && levlcheckturn;
+        levlchecksum3 = levelcheck3 && levlcheckturn;
+        /*if(levelcheck1 == true || levelcheck2==true || levelcheck3 == true){
 
-        levlchecksum = levelcheck & levlcheck2;
-        Debug.Log(levlchecksum + "---" + scriptInstance.pusher);
+            levlchecksum = levlcheck2;
+        }*/
+        
+        //Debug.Log("1" + levlchecksum1 + "2" + levlchecksum2 + "3" + levlchecksum3);
         //Debug.Log("Levelchecksum Value: " + levlchecksum + "\nLevelcheck Value: " + levelcheck + "\n Levlcheck2 Value: " + levlcheck2);
 
 
-        if (levlchecksum == true){
+        if (levlchecksum1 == true || levlchecksum2 == true || levlchecksum3 == true ){
 
-        events.StartupHighscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
+            events.StartupHighscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
 
-        timerDefaultColor = timerText.color;
-        LoadData();
+            timerDefaultColor = timerText.color;
+            LoadData();
 
-        timerStateParaHash = Animator.StringToHash("TimerState");
+            timerStateParaHash = Animator.StringToHash("TimerState");
 
-        var seed = UnityEngine.Random.Range(int.MinValue, int.MaxValue);
-        UnityEngine.Random.InitState(seed);
+            var seed = UnityEngine.Random.Range(int.MinValue, int.MaxValue);
+            UnityEngine.Random.InitState(seed);
 
-        Display();
+            Display();
 
-        levlcheck2 = false;
-        
-
-        
+            levlcheckturn = false;
+            
          }
     }
 

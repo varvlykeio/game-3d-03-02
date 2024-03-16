@@ -19,13 +19,14 @@ namespace MyVars{
         public bool Maze2 = false;
         public bool Maze3 = false;
         public bool Maze4 = true;
-        public bool Quizlevel;
-        public GameObject fpc;
-        public GameObject TextE;
+        
+        //public bool Quizlevel;
+        //public GameObject fpc;
+        //public GameObject TextE;
         //public bool dooropen;
         
-        QuizCols scriptInstance = null;
-        Door NewInstance = null;
+        //QuizCols1 scriptInstance = null;
+        //Door NewInstance = null;
 
         
         public void Update(){
@@ -33,9 +34,9 @@ namespace MyVars{
             
             
 
-            GameObject tempObj = GameObject.FindGameObjectWithTag("ATM - Tag");
-            scriptInstance = tempObj.GetComponent<QuizCols>();
-            Quizlevel = scriptInstance.activate;
+            //GameObject tempObj = GameObject.FindGameObjectWithTag("ATM - Tag");
+            //scriptInstance = tempObj.GetComponent<QuizCols>();
+            //Quizlevel = scriptInstance.pusher1;
 
             //Debug.Log(Quizlevel);
             /* GameObject tempObjs = GameObject.FindGameObjectWithTag("Door");

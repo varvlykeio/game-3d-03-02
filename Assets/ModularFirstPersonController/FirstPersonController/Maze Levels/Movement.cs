@@ -33,7 +33,7 @@ public class Movement : MonoBehaviour
     {
 
 			// Access the variable from MyClass       
-			levelcheck1 = myInstance.Maze1;
+//		levelcheck1 = myInstance.Maze1;
       levelcheck2 = myInstance.Maze2;
       levelcheck3 = myInstance.Maze3;
       levelcheck4 = myInstance.Maze4;

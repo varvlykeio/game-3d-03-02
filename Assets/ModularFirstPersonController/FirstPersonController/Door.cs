@@ -25,7 +25,7 @@ public class Door : MonoBehaviour
 
     private Coroutine AnimationCoroutine;
     public bool activate;
-    public GameObject textE;
+    //public GameObject textE;
     //MyVarsClass scriptInstance = null;
     
 
@@ -39,25 +39,25 @@ public class Door : MonoBehaviour
     }
     public void Start(){
 
-        textE = GameObject.Find("Door - E");
+        //textE = GameObject.Find("Door - E");
         // δεν χρειαζονται τα σχολια
         //GameObject tempObj = GameObject.Find("Fan_01 (1)");
         //scriptInstance = tempObj.GetComponent<MyVarsClass>();
         //textE = scriptInstance.TextE;
-        textE.SetActive(false);
+        //textE.SetActive(false);
         
     }
     
      public void OnTriggerEnter(){
         //e
         activate = true;
-        textE.SetActive(true);
+        //textE.SetActive(true);
         
     }
 
     public void OnTriggerExit(){
         activate = false;
-        textE.SetActive(false);
+        //textE.SetActive(false);
 
     }
     public void Update()
