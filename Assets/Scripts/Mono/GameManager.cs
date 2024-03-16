@@ -15,9 +15,7 @@ public class GameManager : MonoBehaviour {
 
     #region Variables
 
-    public              bool                levlchecksum1            = false;
-    public              bool                levlchecksum2            = false;
-    public              bool                levlchecksum3            = false;
+    public              bool                levlchecksum            = false;
     public              bool                levlcheckturn              = true;   
     public              bool                levelcheck1             = false;
     public              bool                levelcheck2             = false;
@@ -40,7 +38,6 @@ public class GameManager : MonoBehaviour {
 
     private             IEnumerator         IE_WaitTillNextRound    = null;
     private             IEnumerator         IE_StartTimer           = null;
-    //Vector3             Vector;
 
     private             bool                IsFinished
     {
@@ -78,23 +75,6 @@ public class GameManager : MonoBehaviour {
         if (events.level == 1) { events.CurrentFinalScore = 0; }
     }
 
-    /// <summary>
-    /// Function that is called when the script instance is being loaded.
-    /// </summary>
-   
-    /*void Start() {
-        events.StartupHighscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
-       
-
-        timerDefaultColor = timerText.color;
-    
-        timerStateParaHash = Animator.StringToHash("TimerState");
-
-        var seed = UnityEngine.Random.Range(int.MinValue, int.MaxValue);
-        UnityEngine.Random.InitState(seed);
-
-        
-	}*/
     QuizCols1 scriptInstance1 = null;
     QuizCols2 scriptInstance2 = null;
     QuizCols3 scriptInstance3 = null;
@@ -107,26 +87,20 @@ public class GameManager : MonoBehaviour {
         scriptInstance2 = tempObj2.GetComponent<QuizCols2>();
         GameObject tempObj3 = GameObject.Find("ATM3");
         scriptInstance3 = tempObj3.GetComponent<QuizCols3>();
-        //QuizCols NewInstance = new QuizCols();
-        //Quiz MyInstance = new Quiz();
-
-        //levelcheck = scriptInstance.pusher;
+        
         levelcheck1 = scriptInstance1.pusher1;
         levelcheck2 = scriptInstance2.pusher2;
         levelcheck3 = scriptInstance3.pusher3;
-        levlchecksum1 = levelcheck1 && levlcheckturn;
-        levlchecksum2 = levelcheck2 && levlcheckturn;
-        levlchecksum3 = levelcheck3 && levlcheckturn;
-        /*if(levelcheck1 == true || levelcheck2==true || levelcheck3 == true){
+        if(levelcheck1 == true || levelcheck2==true || levelcheck3 == true){
 
-            levlchecksum = levlcheck2;
-        }*/
+            levlchecksum = levlcheckturn;
+        }
         
         //Debug.Log("1" + levlchecksum1 + "2" + levlchecksum2 + "3" + levlchecksum3);
         //Debug.Log("Levelchecksum Value: " + levlchecksum + "\nLevelcheck Value: " + levelcheck + "\n Levlcheck2 Value: " + levlcheck2);
 
 
-        if (levlchecksum1 == true || levlchecksum2 == true || levlchecksum3 == true ){
+        if (levlchecksum){
 
             events.StartupHighscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
 
