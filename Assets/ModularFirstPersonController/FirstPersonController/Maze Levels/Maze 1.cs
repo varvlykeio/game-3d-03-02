@@ -29,16 +29,16 @@ public class Maze1 : MonoBehaviour
 		ImgMaze1.enabled = false;
 
 	}
+	MyVarsClass scriptInstance = null;
 
 	void Update() {
 
 		//Create an instance of MyClass
-        MyVarsClass myInstance = new MyVarsClass();
-
-
-        // Access the variable from MyClass       
-		levelcheck = myInstance.Maze1;
-		//fpc = myInstance.fpc;
+       
+		GameObject tempObj1 = GameObject.Find("Control Center");
+     	scriptInstance = tempObj1.GetComponent<MyVarsClass>();
+     	// Access the variable from MyClass       
+		levelcheck = scriptInstance.Maze1;
 		
 
 		if( levelcheck == true ){

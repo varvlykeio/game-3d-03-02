@@ -14,7 +14,7 @@ public class Movement : MonoBehaviour
 
     public static int a;
 
-    MyVarsClass myInstance = new MyVarsClass();
+    MyVarsClass scriptInstance = null;
 
 	
 
@@ -29,14 +29,16 @@ public class Movement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update(){
+
+      GameObject tempObj1 = GameObject.Find("Control Center");
+      scriptInstance = tempObj1.GetComponent<MyVarsClass>();
 
 			// Access the variable from MyClass       
-//		levelcheck1 = myInstance.Maze1;
-      levelcheck2 = myInstance.Maze2;
-      levelcheck3 = myInstance.Maze3;
-      levelcheck4 = myInstance.Maze4;
+		  levelcheck1 = scriptInstance.Maze1;
+      levelcheck2 = scriptInstance.Maze2;
+      levelcheck3 = scriptInstance.Maze3;
+      levelcheck4 = scriptInstance.Maze4;
 
 
       //εμφανισει τοποθεσιας

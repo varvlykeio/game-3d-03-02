@@ -23,14 +23,13 @@ public class Maze3 : MonoBehaviour
 	}
 	public bool FirstRun = true;
 
+	MyVarsClass scriptInstance = null;
 	void Update() {
-
-		//Create an instance of MyClass
-        MyVarsClass myInstance = new MyVarsClass();
+		GameObject tempObj1 = GameObject.Find("Control Center");
+		scriptInstance = tempObj1.GetComponent<MyVarsClass>();
 
         // Access the variable from MyClass       
-		levelcheck = myInstance.Maze1;
-
+		levelcheck = scriptInstance.Maze3;
 		
 
 		if( levelcheck == true ){

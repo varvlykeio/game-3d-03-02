@@ -13,7 +13,7 @@ namespace MyVars{
     public class MyVarsClass : MonoBehaviour
     {
         
-        /*public bool Maze1 = false;
+        public bool Maze1 = false;
         public bool Maze2 = false;
         public bool Maze3 = false;
         public bool Maze4 = true;
@@ -22,7 +22,7 @@ namespace MyVars{
         public void Update(){
 
       
-        }*/
+        }
     }
 }
 

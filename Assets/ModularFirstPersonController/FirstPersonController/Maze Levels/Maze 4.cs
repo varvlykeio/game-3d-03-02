@@ -24,20 +24,20 @@ public class Maze4 : MonoBehaviour
 	public bool FirstRun = true;
 
 
+	MyVarsClass scriptInstance = null;
 	void Update() {
-
-		//Create an instance of MyClass
-        MyVarsClass myInstance = new MyVarsClass();
+		GameObject tempObj1 = GameObject.Find("Control Center");
+		scriptInstance = tempObj1.GetComponent<MyVarsClass>();
 
         // Access the variable from MyClass       
-		levelcheck = myInstance.Maze4;
+		levelcheck = scriptInstance.Maze4;
 
 		
 
 		if( levelcheck == true ){
 			if(FirstRun == true) {
 
-//				ImgMaze4.enabled = true;
+				//ImgMaze4.enabled = true;
 				FirstRun = false;
 				
 			}
@@ -45,7 +45,6 @@ public class Maze4 : MonoBehaviour
 
 				//script for Maze 4
 						
-
 			}
 		}
 	}
