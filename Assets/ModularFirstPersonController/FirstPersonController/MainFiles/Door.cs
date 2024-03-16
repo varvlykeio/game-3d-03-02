@@ -82,8 +82,7 @@ public class Door : MonoBehaviour
     
     
 
-    private IEnumerator DoSlidingOpen()
-    {
+    private IEnumerator DoSlidingOpen(){
         Vector3 endPosition = StartPosition + SlideAmount * SlideDirection;
         Vector3 startPosition = transform.position;
 
@@ -99,8 +98,7 @@ public class Door : MonoBehaviour
 
     
 
-    private IEnumerator DoSlidingClose()
-    {
+    private IEnumerator DoSlidingClose(){
         Vector3 endPosition = StartPosition;
         Vector3 startPosition = transform.position;
         float time = 0;

@@ -4,6 +4,9 @@ using PlasticGui.WorkspaceWindow;
 using UnityEngine;
 using QuizCol;
 using Doors;
+using Codice.CM.Common;
+using log4net.Core;
+using System.Diagnostics;
 
 
 
@@ -17,11 +20,20 @@ namespace MyVars{
         public bool Maze2 = false;
         public bool Maze3 = false;
         public bool Maze4 = true;
+        public bool diadromos = true;
+        public float[] CoinR =  { 0 , 0, 0 , 0 , 0 , 0 };
+        public GameObject coin;
+    
        
-        
-        public void Update(){
+        public void Start(){
+
+           CoinR[5] = 5;
+  
+        }
 
       
+        public void Update(){
+
         }
     }
 }
