@@ -55,13 +55,13 @@ public class Coin : MonoBehaviour{
     
             foreach (GameObject thisEnemy in allSpawns){ 
             DoSlidingOpen(thisEnemy);
-            DoSlidingClose(thisEnemy);
+            
             }
         }
 
         public void SpawnCoin(){
             Vector3 randCoinPos = new Vector3(Random.Range(CoinR[0], CoinR[1]), CoinR[2], Random.Range(CoinR[3], CoinR[4]));
-            Quaternion CoinQ = new Quaternion(90,90,0,0);
+            Quaternion CoinQ = new Quaternion(0,0,0,0);
             GameObject spawned = Instantiate(coin, randCoinPos, CoinQ);
             allSpawns.Add(spawned);
         }
