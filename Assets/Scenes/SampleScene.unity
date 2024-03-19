@@ -1705,7 +1705,7 @@ Transform:
   m_GameObject: {fileID: 250776167}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -44.9, y: -8.13, z: -19.1}
+  m_LocalPosition: {x: -44.9, y: -8.8, z: -19.1}
   m_LocalScale: {x: 2000, y: 5, z: 2000}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1797,7 +1797,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Tel_Target: {fileID: 1091961032}
   Tel_Target2: {fileID: 1683286439}
-  the_player: {fileID: 250776167}
+  the_player: {fileID: 1700932311}
+  player_location: {x: 0, y: 0, z: 0}
 --- !u!65 &250776173
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5778,7 +5779,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levlchecksum: 0
-  pistadone: 0
   levlcheckturn: 1
   levelcheck1: 0
   levelcheck2: 0
