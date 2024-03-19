@@ -29,7 +29,7 @@ namespace MyVars{
         public void Start(){
 
             CoinR[5] = 4;
-            
+
         }
 
 
@@ -40,7 +40,7 @@ namespace MyVars{
             //The ifs will choose the coordinates' range where the coins will spawn depending on what διάδρομος we are in 
 
             //if(level1 == true){
-            CoinR[0] = -51;     CoinR[1] = -32;     CoinR[2] = 1;     CoinR[3] = -24;     CoinR[4] = -20; 
+            CoinR[0] = -51;     CoinR[1] = -32;     CoinR[2] = 0.5f;     CoinR[3] = -24;     CoinR[4] = -20; 
             /*}
             else if(level2 == true){
                 CoinR[0] = -21;     CoinR[1] = -33;     CoinR[2] = 4;     CoinR[3] = -54;     CoinR[4] = -16;
