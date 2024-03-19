@@ -25,20 +25,26 @@ namespace QuizCol {
 
         }
 
-        public void Update(){
+         public void Update(){
 
             if (activate == true){
                 if(Input.GetKeyDown("i")){
-                
+
                     pusher3 = true;
+                    Invoke("deletos", 2f);
 
                 }
             }
         }
 
+        public void deletos(){
+            Destroy(gameObject);
+        }
+
         public void OnTriggerExit(){
             
             activate = false;
+            Invoke("Destroy(gameObject)", 2f);
 
         }
         

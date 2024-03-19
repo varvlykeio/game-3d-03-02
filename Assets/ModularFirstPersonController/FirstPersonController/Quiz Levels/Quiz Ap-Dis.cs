@@ -32,11 +32,11 @@ namespace QuizVars{
 		QuizCols2 scriptInstance2 = null;
 		QuizCols3 scriptInstance3 = null;	
 		void Update () {
-			GameObject tempObj1 = GameObject.Find("ATM1");
+			GameObject tempObj1 = GameObject.Find("ATM1(Clone)");
 			scriptInstance1 = tempObj1.GetComponent<QuizCols1>();
-			GameObject tempObj2 = GameObject.Find("ATM2");
+			GameObject tempObj2 = GameObject.Find("ATM2(Clone)");
 			scriptInstance2 = tempObj2.GetComponent<QuizCols2>();
-			GameObject tempObj3 = GameObject.Find("ATM3");
+			GameObject tempObj3 = GameObject.Find("ATM3(Clone)");
 			scriptInstance3 = tempObj3.GetComponent<QuizCols3>();
 				
 
@@ -44,7 +44,7 @@ namespace QuizVars{
 			levelcheck2 = scriptInstance2.pusher2;
 			levelcheck3 = scriptInstance3.pusher3;
 
-			Debug.Log("1" + levelcheck1 + "2" + levelcheck2 + "3" + levelcheck3);
+			//Debug.Log("1" + levelcheck1 + "2" + levelcheck2 + "3" + levelcheck3);
 		
 			if (levelcheck1 == true || levelcheck2 == true || levelcheck3 == true) {
 

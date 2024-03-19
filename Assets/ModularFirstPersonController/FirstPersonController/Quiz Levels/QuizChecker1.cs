@@ -31,12 +31,14 @@ namespace QuizCol {
                 if(Input.GetKeyDown("i")){
 
                     pusher1 = true;
+                    Invoke("deletos", 2f);
 
                 }
             }
+        }
 
-      
-
+        public void deletos(){
+            Destroy(gameObject);
         }
 
         public void OnTriggerExit(){
