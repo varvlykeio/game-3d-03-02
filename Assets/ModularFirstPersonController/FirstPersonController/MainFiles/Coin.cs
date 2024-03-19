@@ -4,27 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Coin : MonoBehaviour{  
-    public bool  isopen;
-
-    [SerializeField]
-    private float Speed = 1f;
-
-    [Header("Sliding Configs")]
-    [SerializeField]
-    
-    
-    private Vector3 SlideDirection = Vector3.up;
-    [SerializeField]
-    private float SlideAmount = 1f;
-    private Vector3 StartPosition;
-
-    private Coroutine AnimationCoroutine;
-
     public bool diadromos = true;
     public float[] CoinR =  { 0 , 0, 0 , 0 , 0 , 0 };
     public GameObject coin;
-    public GameObject spawned;
-    public List<GameObject> allSpawns = new List<GameObject>();
+
     
      public void Start(){
 
@@ -59,8 +42,8 @@ public class Coin : MonoBehaviour{
         public void SpawnCoin(){
             Vector3 randCoinPos = new Vector3(Random.Range(CoinR[0], CoinR[1]), CoinR[2], Random.Range(CoinR[3], CoinR[4]));
             Quaternion CoinQ = new Quaternion(0,0,0,0);
-            GameObject spawned = Instantiate(coin, randCoinPos, CoinQ);
-            allSpawns.Add(spawned);
+            Instantiate(coin, randCoinPos, CoinQ);
+
         }
 
 
