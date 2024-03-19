@@ -53,10 +53,7 @@ public class Coin : MonoBehaviour{
             }
 
     
-            foreach (GameObject thisEnemy in allSpawns){ 
-            DoSlidingOpen(thisEnemy);
-            
-            }
+        
         }
 
         public void SpawnCoin(){
@@ -66,39 +63,6 @@ public class Coin : MonoBehaviour{
             allSpawns.Add(spawned);
         }
 
-
-    private IEnumerator DoSlidingOpen(GameObject eachcoin){
-        
-        StartPosition = eachcoin.transform.position;
-        Vector3 endPosition = StartPosition + SlideAmount * SlideDirection;
-        Vector3 startPosition = eachcoin.transform.position;
-
-        float time = 0;
-        while (time < 1)
-        {
-            eachcoin.transform.position = Vector3.Lerp(startPosition, endPosition, time);
-            yield return null;
-            time += Time.deltaTime * Speed;
-        }
-        
-    }
-
-    
-
-    private IEnumerator DoSlidingClose(GameObject eachcoins){
-
-        StartPosition = eachcoins.transform.position;
-        Vector3 endPosition = StartPosition;
-        Vector3 startPosition = eachcoins.transform.position;
-        float time = 0;
-        while (time < 1)
-        {
-            eachcoins.transform.position = Vector3.Lerp(startPosition, endPosition, time);
-            yield return null;
-            time += Time.deltaTime * Speed;
-        }
-        
-    }
 
     /*private void OnTriggerEnter(Collider other)
     {
