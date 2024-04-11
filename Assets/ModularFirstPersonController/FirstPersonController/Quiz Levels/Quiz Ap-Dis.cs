@@ -11,6 +11,7 @@ namespace QuizVars{
 
 		//public bool levelcheck;
 		public GameObject Content;
+		public GameObject Resolution;
 		public bool FirstRun;
 		public bool CursorLock;
 		public bool QuizStart;
@@ -20,9 +21,10 @@ namespace QuizVars{
 
 		
 	
-		void Start () {
+		void OnEnable() {
 
 			Content.SetActive(false);
+			Resolution.SetActive(false);
 			
 			FirstRun = true;
 			CursorLock = true;
@@ -50,6 +52,7 @@ namespace QuizVars{
 
 
 				Content.SetActive(true);
+				Resolution.SetActive(true);
 				FirstRun = true;
 				
 				CursorLock = false;

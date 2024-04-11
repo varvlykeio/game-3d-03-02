@@ -10,6 +10,7 @@ using Unity.VisualScripting;
 using System;
 using QuizCol;
 using System.Numerics;
+using MyVars;
 
 namespace Gamemanagera{
 
@@ -22,6 +23,7 @@ namespace Gamemanagera{
         public              bool                levelcheck1             = false;
         public              bool                levelcheck2             = false;
         public              bool                levelcheck3             = false;
+        public              GameObject          cc                      ;
         private             Data                data                    = new Data();
 
         [SerializeField]    GameEvents          events                  = null;
@@ -321,6 +323,8 @@ namespace Gamemanagera{
         /// <summary>
         /// Function that is called restart the game.
         /// </summary>
+        /// 
+        #region RESTART
         public void RestartGame()
         {
             //If next level is the first level, meaning that we start playing a game again, reset the final score.
@@ -328,10 +332,14 @@ namespace Gamemanagera{
             { 
                 events.CurrentFinalScore = 0; 
             }
+            //cc.GetComponent<MyVarsClass>().enabled = false;
+            //cc.GetComponent<MyVarsClass>().enabled = true; 
+            
         // Vector = (1f, 1f, 1f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         
         }
+        #endregion RESTART
         /// <summary>
         /// Function that is called to quit the application.
         /// </summary>

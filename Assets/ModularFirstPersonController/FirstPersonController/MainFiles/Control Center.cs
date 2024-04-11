@@ -49,6 +49,12 @@ namespace MyVars{
     
         public void Start(){
 
+            UnityEngine.Debug.Log("sh");
+
+        }
+
+        public void OnEnable(){
+           UnityEngine.Debug.Log("sh");
 
 
         }

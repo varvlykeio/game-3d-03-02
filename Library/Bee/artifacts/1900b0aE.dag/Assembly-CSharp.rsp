@@ -359,6 +359,7 @@
 "Assets/Scripts/Mono/AudioManager.cs"
 "Assets/Scripts/Mono/GameManager.cs"
 "Assets/Scripts/Mono/UIManager.cs"
+"Assets/Scripts/Restarter.cs"
 "Assets/Scripts/ScriptableObject/GameEvents.cs"
 "Assets/Scripts/ScriptableObject/Question.cs"
 "Assets/Scripts/Utility/GameUtility.cs"
