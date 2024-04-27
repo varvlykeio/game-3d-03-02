@@ -4,7 +4,7 @@ using System.Collections;
 using MyVars;
 using UnityEditor.Build.Content;
 using QuizCol;
-using Codice.CM.Common;
+
 
 namespace QuizVars{
 	public class Quiz : MonoBehaviour {

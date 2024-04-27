@@ -1,13 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using PlasticGui.WorkspaceWindow;
 using UnityEngine;
 using QuizCol;
 using Doors;
-using Codice.CM.Common;
-using log4net.Core;
 using System.Diagnostics;
 using System.Numerics;
+
 
 
 
@@ -24,6 +20,8 @@ namespace MyVars{
         public int level = 1;
         public int levelch = 1;
         public int Question;
+
+
 
         public GameObject[] QuestionList = new GameObject[3];
 
@@ -64,13 +62,11 @@ namespace MyVars{
         QuizCols1 scriptInstance1 = null;
         QuizCols2 scriptInstance2 = null;
         QuizCols3 scriptInstance3 = null;
+      
+
+
         public void Update()
         {
-
-            
-
-
-
 
 
      
@@ -94,6 +90,15 @@ namespace MyVars{
                 diadromos= false;
 
             }
+
+         
+
+
+
+
+
+
+
             #endregion Coins
 
             #region Questions
@@ -135,7 +140,7 @@ namespace MyVars{
 
         public void SpawnCoin(){
 
-            UnityEngine.Vector3 randCoinPos = new UnityEngine.Vector3(Random.Range(CoinR[level-1,0], CoinR[level-1,1]), CoinR[level-1,2], Random.Range(CoinR[level - 1,3], CoinR[level-1,4]));
+            UnityEngine.Vector3 randCoinPos = new UnityEngine.Vector3(UnityEngine.Random.Range(CoinR[level-1,0], CoinR[level-1,1]), CoinR[level-1,2], UnityEngine.Random.Range(CoinR[level - 1,3], CoinR[level-1,4]));
             UnityEngine.Quaternion CoinQ = new UnityEngine.Quaternion(0,0,0,0);
             Instantiate(coin, randCoinPos, CoinQ);
 

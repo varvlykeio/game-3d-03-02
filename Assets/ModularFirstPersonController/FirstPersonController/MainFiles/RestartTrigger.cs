@@ -10,11 +10,11 @@ public class RestartTrigger : MonoBehaviour
     public Transform Tel_Target, Tel_Target2;
     public GameObject the_player;
 
-    Vector3 player_location;
+    //Vector3 player_location;
 
     void Start()
     {
-        player_location = the_player.transform.position; 
+        //player_location = the_player.transform.position; 
     }
 
     void OnTriggerEnter (Collider other)
