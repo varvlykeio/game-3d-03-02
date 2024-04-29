@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-//τηλεμεταφορα στον ανεμιστηρα απο το κουιζ
+//τηλεμεταφορα (στον ανεμιστηρα) στα ATM απο το κουιζ
 //περιεργη τηλεμεταφορά του παίκτη: -279 , -8.11 , 17.24 ...
 
 public class RestartTrigger : MonoBehaviour 

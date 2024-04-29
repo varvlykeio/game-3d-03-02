@@ -25,19 +25,10 @@ public class Door : MonoBehaviour
 
     private Coroutine AnimationCoroutine;
     public bool activate;
-    //public GameObject textE;
-    //MyVarsClass scriptInstance = null;
-    
-
-
-
 
     private void Awake()
     {
         StartPosition = transform.position;
-    }
-    public void Start(){
-
     }
     
      public void OnTriggerEnter(){
@@ -57,30 +48,23 @@ public class Door : MonoBehaviour
             
             if (activate == true)
             {
-            if (!IsOpen)
-            {
-                if (Input.GetKeyDown("e"))
+                if (!IsOpen)
                 {
-                
-                    AnimationCoroutine = StartCoroutine(DoSlidingOpen()); 
+                    if (Input.GetKeyDown("e"))
+                    {
+                    
+                        AnimationCoroutine = StartCoroutine(DoSlidingOpen()); 
+                    }
                 }
-            }
-            else
-            {
-                if (Input.GetKeyDown("e"))
-                {            
-                    AnimationCoroutine = StartCoroutine(DoSlidingClose());
+                else
+                {
+                    if (Input.GetKeyDown("e"))
+                    {            
+                        AnimationCoroutine = StartCoroutine(DoSlidingClose());
+                    }
                 }
-            }
             }
         }
-
-
-   
-
-
-    
-    
 
     private IEnumerator DoSlidingOpen(){
         Vector3 endPosition = StartPosition + SlideAmount * SlideDirection;

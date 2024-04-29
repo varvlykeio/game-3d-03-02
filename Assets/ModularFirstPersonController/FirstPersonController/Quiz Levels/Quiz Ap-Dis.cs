@@ -8,8 +8,6 @@ using QuizCol;
 
 namespace QuizVars{
 	public class Quiz : MonoBehaviour {
-
-		//public bool levelcheck;
 		public GameObject Content;
 		public GameObject Resolution;
 		public bool FirstRun;
@@ -19,8 +17,6 @@ namespace QuizVars{
 		public              bool                levelcheck2             = false;
 		public              bool                levelcheck3             = false;
 
-		
-	
 		void OnEnable() {
 
 			Content.SetActive(false);
@@ -45,8 +41,6 @@ namespace QuizVars{
 			levelcheck1 = scriptInstance1.pusher1;
 			levelcheck2 = scriptInstance2.pusher2;
 			levelcheck3 = scriptInstance3.pusher3;
-
-			//Debug.Log("1" + levelcheck1 + "2" + levelcheck2 + "3" + levelcheck3);
 		
 			if (levelcheck1 == true || levelcheck2 == true || levelcheck3 == true) {
 

@@ -145,18 +145,6 @@ namespace MyVars{
             Instantiate(coin, randCoinPos, CoinQ);
 
         }
-
-        /*public void SpawnQuestions(int lvl, int qst){
-            UnityEngine.Vector3  QuestionPos = new UnityEngine.Vector3(QuestionR[qst,lvl-1,0],QuestionR[qst,lvl-1,1],QuestionR[qst,lvl-1,2]);
-            UnityEngine.Quaternion QuestionQ = new UnityEngine.Quaternion(0,0,0,0);
-            Instantiate(QuestionList[0], QuestionPos, QuestionQ);
-
-
-        }*/
-
-
-
-
     }
 }
 

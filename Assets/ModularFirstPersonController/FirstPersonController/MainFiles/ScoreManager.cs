@@ -9,6 +9,8 @@ using TMPro;
 public class ScoreManager : MonoBehaviour
 {
 
+    #region Important
+
     /*[SerializeField] TextMeshProUGUI TotalScore;
     public TextMeshProUGUI TotalScoreText { get { return TotalScore; } }
 
@@ -16,7 +18,8 @@ public class ScoreManager : MonoBehaviour
         uIElements.ResolutionScoreText.text = "+" + score;
 
 
-    }
+    }*/
+    #endregion Important
 
  /*   
     public Text scoreText;
