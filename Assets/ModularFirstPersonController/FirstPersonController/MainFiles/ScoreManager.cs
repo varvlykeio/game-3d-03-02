@@ -4,25 +4,38 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using GameEv;
+using System;
+using System.IO;
+using UnityEditor.PackageManager;
 
 
 public class ScoreManager : MonoBehaviour
 {
 
     #region Important
+    [SerializeField]    GameEvents          events                  = null;
+     public Text scoreText;
+    
+    public void Start(){
+        scoreText.text = "Score: " + events.TotalScore.ToString() ;
+        Debug.Log("KK" + events.TotalScore);
+    }
+    
+    public void Awake(){
+        scoreText.text = "Score: " + events.TotalScore.ToString() ;
+        Debug.Log("KK" + events.TotalScore);
+    }
 
-    /*[SerializeField] TextMeshProUGUI TotalScore;
-    public TextMeshProUGUI TotalScoreText { get { return TotalScore; } }
-
-    void UpdateUIScore(){
-        uIElements.ResolutionScoreText.text = "+" + score;
+    public void Update(){
+        scoreText.text = "Score: " + events.TotalScore.ToString() ;
 
 
-    }*/
+    }
     #endregion Important
 
  /*   
-    public Text scoreText;
+   
 
     public static int score;
 

@@ -27,6 +27,18 @@ namespace GameEv{
         public                  int                                 CurrentFinalScore               = 0;
         [HideInInspector]
         public                  int                                 StartupHighscore                = 0;
-        public                  int                                 TotalScore                      = 0;
+        public                  int                                 TotalScore                      = 0; 
+
+        
+        
+        //
+        
+        public void Awake(){
+
+            TotalScore = 0;
+        
+        }
     }
+   
 }
+

@@ -82,6 +82,7 @@
     <Compile Include="Assets\Movement\Common Scripts\MouseLook.cs" />
     <Compile Include="Assets\Movement\Common Scripts\Turn_Move.cs" />
     <Compile Include="Assets\ModularFirstPersonController\Mono\AnswerData.cs" />
+    <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\Restarter.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\RestartTrigger.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\Quiz Levels\QuizChecker2.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\Maze Levels\Maze 2.cs" />
@@ -90,7 +91,6 @@
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\Movement.cs" />
     <Compile Include="Assets\ModularFirstPersonController\Mono\GameManager.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\FirstPersonController.cs" />
-    <Compile Include="Assets\ModularFirstPersonController\Restarter.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\Maze Levels\Maze 4.cs" />
   </ItemGroup>
   <ItemGroup>

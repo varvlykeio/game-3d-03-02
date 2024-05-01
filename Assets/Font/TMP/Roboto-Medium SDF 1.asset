@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Roboto-Medium SDF 1
   m_EditorClassIdentifier: 
-  hashCode: -737250198
+  hashCode: 293417723
   material: {fileID: 21641202490330990}
-  materialHashCode: 1251382410
+  materialHashCode: -1458990725
   m_Version: 1.1.0
   m_SourceFontFileGUID: 00aa5639217f039479ed3c18036effbc
   m_SourceFontFile_EditorRef: {fileID: 0}
@@ -2907,8 +2907,9 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - GLOW_ON
-  - UNDERLAY_ON
-  m_InvalidKeywords: []
+  - UNDERLAY_INNER
+  m_InvalidKeywords:
+  - MASK_SOFT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -2929,7 +2930,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _FaceTex:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 3, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 28851276599058804}
@@ -2938,7 +2939,7 @@ Material:
     - _OutlineTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 0, y: 0}
-        m_Offset: {x: 0, y: 0}
+        m_Offset: {x: -0, y: 0}
     m_Ints: []
     m_Floats:
     - _Ambient: 0.5
@@ -2958,7 +2959,7 @@ Material:
     - _GlowOffset: 1
     - _GlowOuter: 1
     - _GlowPower: 1
-    - _GradientScale: 6
+    - _GradientScale: 5.92
     - _LightAngle: 3.1416
     - _MaskSoftnessX: 0
     - _MaskSoftnessY: 0
@@ -2966,9 +2967,9 @@ Material:
     - _OutlineUVSpeedX: 0
     - _OutlineUVSpeedY: 0
     - _OutlineWidth: 1
-    - _PerspectiveFilter: 0.875
+    - _PerspectiveFilter: 0.713
     - _Reflectivity: 10
-    - _ScaleRatioA: 0.26143792
+    - _ScaleRatioA: 0.2607313
     - _ScaleRatioB: 0
     - _ScaleRatioC: 0
     - _ScaleX: 1
@@ -2976,12 +2977,12 @@ Material:
     - _ShaderFlags: 0
     - _SpecularPower: 2
     - _Stencil: 0
-    - _StencilComp: 8
+    - _StencilComp: 141
     - _StencilOp: 0
     - _StencilReadMask: 255
     - _StencilWriteMask: 255
-    - _TextureHeight: 512
-    - _TextureWidth: 512
+    - _TextureHeight: 48913.5
+    - _TextureWidth: 10721.86
     - _UnderlayDilate: -1
     - _UnderlayOffsetX: 1
     - _UnderlayOffsetY: -1
@@ -2991,7 +2992,7 @@ Material:
     - _WeightBold: 0.75
     - _WeightNormal: 0
     m_Colors:
-    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _ClipRect: {r: -30074.8, g: -32767, b: 32767, a: 32767}
     - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
     - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
     - _GlowColor: {r: 1, g: 1, b: 1, a: 0.02745098}
@@ -3000,7 +3001,7 @@ Material:
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
-    - _UnderlayColor: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
+    - _UnderlayColor: {r: 0.7132075, g: 0.7132075, b: 0.7132075, a: 1}
   m_BuildTextureStacks: []
 --- !u!28 &28851276599058804
 Texture2D:

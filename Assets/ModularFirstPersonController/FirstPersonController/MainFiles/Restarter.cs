@@ -14,9 +14,9 @@ using UnityEditor;
 using Gamemanagera;
 
 
-/*public class Restarter : MonoBehaviour {
+public class Restarter : MonoBehaviour {
 
-    public GameObject Referance;
+    /*public GameObject Referance;
 
 
 
@@ -36,9 +36,9 @@ using Gamemanagera;
       Referance.GetComponent<Quiz>().enabled = false;
       Referance.GetComponent<Quiz>().enabled = true;
 
-    }
+    }*/
 
 
 
 
-}*/
+}

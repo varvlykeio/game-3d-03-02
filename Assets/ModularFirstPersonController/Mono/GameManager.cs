@@ -109,7 +109,7 @@ namespace Gamemanagera{
             }
 
             
-            Debug.Log(events.CurrentFinalScore);
+            //Debug.Log(events.CurrentFinalScore);
             
             //Debug.Log("1" + levlchecksum1 + "2" + levlchecksum2 + "3" + levlchecksum3);
             //Debug.Log("Levelchecksum Value: " + levlchecksum + "\nLevelcheck Value: " + levelcheck + "\n Levlcheck2 Value: " + levlcheck2);
