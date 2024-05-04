@@ -80,6 +80,7 @@
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\Coin.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\Door.cs" />
     <Compile Include="Assets\Movement\Common Scripts\MouseLook.cs" />
+    <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\SceneChanger.cs" />
     <Compile Include="Assets\Movement\Common Scripts\Turn_Move.cs" />
     <Compile Include="Assets\ModularFirstPersonController\Mono\AnswerData.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\Restarter.cs" />
@@ -87,7 +88,6 @@
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\Quiz Levels\QuizChecker2.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\Maze Levels\Maze 2.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\Quiz Levels\QuizChecker3.cs" />
-    <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\LevelSelect.cs" />
     <Compile Include="Assets\ModularFirstPersonController\ScriptableObject\Question.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\Movement.cs" />
     <Compile Include="Assets\ModularFirstPersonController\Mono\GameManager.cs" />
