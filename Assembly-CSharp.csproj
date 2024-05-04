@@ -87,6 +87,7 @@
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\Quiz Levels\QuizChecker2.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\Maze Levels\Maze 2.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\Quiz Levels\QuizChecker3.cs" />
+    <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\LevelSelect.cs" />
     <Compile Include="Assets\ModularFirstPersonController\ScriptableObject\Question.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\Movement.cs" />
     <Compile Include="Assets\ModularFirstPersonController\Mono\GameManager.cs" />

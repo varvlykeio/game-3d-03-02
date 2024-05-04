@@ -91,13 +91,6 @@ namespace MyVars{
 
             }
 
-         
-
-
-
-
-
-
 
             #endregion Coins
 

@@ -8,6 +8,11 @@ TagManager:
   - Door
   - coin
   - ATM - Tag
+  - But1
+  - But2
+  - But3
+  - But4
+  - But5
   layers:
   - Default
   - TransparentFX

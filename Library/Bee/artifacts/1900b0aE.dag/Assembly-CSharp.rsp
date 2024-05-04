@@ -356,6 +356,7 @@
 "Assets/ModularFirstPersonController/FirstPersonController/MainFiles/Control Center.cs"
 "Assets/ModularFirstPersonController/FirstPersonController/MainFiles/Door.cs"
 "Assets/ModularFirstPersonController/FirstPersonController/MainFiles/FirstPersonController.cs"
+"Assets/ModularFirstPersonController/FirstPersonController/MainFiles/LevelSelect.cs"
 "Assets/ModularFirstPersonController/FirstPersonController/MainFiles/Movement.cs"
 "Assets/ModularFirstPersonController/FirstPersonController/MainFiles/Player_Coin.cs"
 "Assets/ModularFirstPersonController/FirstPersonController/MainFiles/Restarter.cs"

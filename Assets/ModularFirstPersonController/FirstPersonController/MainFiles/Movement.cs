@@ -14,11 +14,8 @@ public class Movement : MonoBehaviour{
   public static int a;
 
   MyVarsClass scriptInstance = null;
-
-	
-
-
   public GameObject Cam;
+  public int level;
 
     // Update is called once per frame
   void Update(){
@@ -31,6 +28,7 @@ public class Movement : MonoBehaviour{
     levelcheck2 = scriptInstance.Maze2;
     levelcheck3 = scriptInstance.Maze3;
     levelcheck4 = scriptInstance.Maze4;
+    level = scriptInstance.level;
 
     if(a != 1){
       if(levelcheck1 == true) {
@@ -53,7 +51,7 @@ public class Movement : MonoBehaviour{
       }
       if(levelcheck4 == true) {
 
-        Cam.transform.position = new Vector3(-26, 4, -17);
+        Cam.transform.position = new Vector3(-50, 4, -17);
         a = 1;
 
       }

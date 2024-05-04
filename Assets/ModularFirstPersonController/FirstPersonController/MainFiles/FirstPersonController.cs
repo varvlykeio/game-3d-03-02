@@ -226,7 +226,7 @@ public class FirstPersonController : MonoBehaviour
             cameraCanMove = false;
         }
         else {
-            Cursor.lockState = CursorLockMode.Locked; 
+            Cursor.lockState = CursorLockMode.None; 
             cameraCanMove = true; 
         }
 
