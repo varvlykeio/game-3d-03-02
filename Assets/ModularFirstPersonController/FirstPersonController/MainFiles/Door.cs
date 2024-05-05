@@ -24,6 +24,7 @@ public class Door : MonoBehaviour
 
     private Coroutine AnimationCoroutine;
     public bool activate;
+    public bool FirstDoor;
 
     private void Awake()
     {
@@ -49,7 +50,7 @@ public class Door : MonoBehaviour
             {
                 if (!IsOpen)
                 {
-                    if (Input.GetKeyDown("e"))
+                    if (Input.GetKeyDown("e") && !FirstDoor)
                     {
                     
                         AnimationCoroutine = StartCoroutine(DoSlidingOpen()); 

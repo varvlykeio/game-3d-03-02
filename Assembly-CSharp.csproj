@@ -82,6 +82,7 @@
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\DoorInstr.cs" />
     <Compile Include="Assets\Movement\Common Scripts\MouseLook.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\SceneChanger.cs" />
+    <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\OneWayDoors.cs" />
     <Compile Include="Assets\Movement\Common Scripts\Turn_Move.cs" />
     <Compile Include="Assets\ModularFirstPersonController\Mono\AnswerData.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\Restarter.cs" />
