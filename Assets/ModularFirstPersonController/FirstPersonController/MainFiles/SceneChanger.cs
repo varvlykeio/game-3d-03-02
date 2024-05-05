@@ -9,7 +9,15 @@ using MyVars;
 using UnityEngine.Timeline;
 
 
-
+//  Build Index
+//       |
+//       v
+// Scene 0: SampleScene / Starting Scene 
+// Scene 1: Math Level
+// Scene 5: Coding Level
+// Scene 4: History Level
+// Scene 3: Language Level
+// Scene 2: Geometry Level
 
 
 
@@ -19,30 +27,23 @@ public class SceneChanger : MonoBehaviour {
     public GameObject StartingUI= null;
 
     public void Button1(){
-        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-        SceneManager.LoadScene(SceneManager.GetSceneByBuildIndex(2).buildIndex);
+        SceneManager.UnloadSceneAsync(0);
+        SceneManager.LoadScene(1);
     }
     public void Button2(){
-        //SceneManager.UnloadScene(SceneManager.GetActiveScene().buildIndex);
-        SceneManager.LoadScene(SceneManager.GetSceneByBuildIndex(0).buildIndex);
-        
-        
+        SceneManager.UnloadSceneAsync(0);
+        SceneManager.LoadScene(5);
     }
     public void Button3(){
-        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-        SceneManager.LoadScene(SceneManager.GetSceneByBuildIndex(5).buildIndex);
-        
-
+        SceneManager.UnloadSceneAsync(0);
+        SceneManager.LoadScene(4);
     }
     public void Button4(){
-        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-        SceneManager.LoadScene(SceneManager.GetSceneByBuildIndex(-1).buildIndex);
-        
+        SceneManager.UnloadSceneAsync(0);
+        SceneManager.LoadScene(3);
     }
     public void Button5(){
-        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-        SceneManager.LoadScene(SceneManager.GetSceneByBuildIndex(3).buildIndex);
-        
-
+        SceneManager.UnloadSceneAsync(0);
+        SceneManager.LoadScene(2);
     }
 }
