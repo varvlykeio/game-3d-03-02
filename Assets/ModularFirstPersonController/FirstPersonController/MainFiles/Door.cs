@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using MyVars;
+using OWDoor;
 
 namespace Doors {
 public class Door : MonoBehaviour
@@ -42,9 +43,16 @@ public class Door : MonoBehaviour
         activate = false;
 
     }
+    OWDoors instance = null;
+    public bool firstdoorch;
     public void Update(){
 
+        
+
             rotation = transform.eulerAngles;
+            /*if(IsOpen && firstdoorch){
+                AnimationCoroutine = StartCoroutine(DoSlidingClose());
+            }*/
             
             if (activate == true)
             {
@@ -64,6 +72,9 @@ public class Door : MonoBehaviour
                     }
                 }
             }
+            GameObject tempObj1 = GameObject.FindGameObjectWithTag("SDL");
+            instance = tempObj1.GetComponent<OWDoors>();
+            firstdoorch = instance.sas;
         }
 
     private IEnumerator DoSlidingOpen(){

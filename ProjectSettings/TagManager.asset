@@ -13,6 +13,7 @@ TagManager:
   - But3
   - But4
   - But5
+  - SDL
   layers:
   - Default
   - TransparentFX
