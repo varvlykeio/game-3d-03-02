@@ -373,6 +373,7 @@
 "Assets/ModularFirstPersonController/FirstPersonController/Quiz Levels/QuizChecker1.cs"
 "Assets/ModularFirstPersonController/FirstPersonController/Quiz Levels/QuizChecker2.cs"
 "Assets/ModularFirstPersonController/FirstPersonController/Quiz Levels/QuizChecker3.cs"
+"Assets/ModularFirstPersonController/FirstPersonController/Quiz Levels/STARTER ATM.cs"
 "Assets/ModularFirstPersonController/Mono/AnswerData.cs"
 "Assets/ModularFirstPersonController/Mono/AudioManager.cs"
 "Assets/ModularFirstPersonController/Mono/GameManager.cs"
@@ -383,6 +384,15 @@
 "Assets/ModularFirstPersonController/Windows/DataCreator_Window.cs"
 "Assets/Movement/Common Scripts/MouseLook.cs"
 "Assets/Movement/Common Scripts/Turn_Move.cs"
+"Assets/PyroParticles/Demo/DemoScript.cs"
+"Assets/PyroParticles/Demo/DemoScriptEditor.cs"
+"Assets/PyroParticles/Prefab/Script/FireBaseScript.cs"
+"Assets/PyroParticles/Prefab/Script/FireCollisionForwardScript.cs"
+"Assets/PyroParticles/Prefab/Script/FireConstantBaseScript.cs"
+"Assets/PyroParticles/Prefab/Script/FireLightScript.cs"
+"Assets/PyroParticles/Prefab/Script/FireProjectileScript.cs"
+"Assets/PyroParticles/Prefab/Script/MeteorSwarmScript.cs"
+"Assets/PyroParticles/Prefab/Script/SingleLineAttribute.cs"
 -langversion:9.0
 
 /deterministic

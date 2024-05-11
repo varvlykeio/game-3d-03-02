@@ -37,9 +37,9 @@ namespace MyVars{
                                   //  QuestionR[ level , Question , x/y/z ]
                                   //              Level 1           ,            Level 2          ,    Level 3   ,    Level 4    ,   Level 5
                                   //        x    ,   y   ,    z           x    ,   y   ,    z         x , y , z      x , y , z      x , y , z
-        public float[,,] QuestionR ={ { { -80.6f , 0.01f , -8.94f  }, { -78.6f , 0.01f , -8.94f  }, { 0 , 0 , 0 }, { 0 , 0 , 0 }, { 0 , 0 , 0 } },   //Question 1
-                                      { { -80.6f , 0.01f , -11.57f }, { -78.6f , 0.01f , -11.57f }, { 0 , 0 , 0 }, { 0 , 0 , 0 }, { 0 , 0 , 0 } },   //Question 2
-                                      { { -80.6f , 0.01f , -15.65f }, { -78.6f , 0.01f , -15.65f }, { 0 , 0 , 0 }, { 0 , 0 , 0 }, { 0 , 0 , 0 } } }; //Question 3
+        public float[,,] QuestionR ={ { { -800.6f , 0.01f , -8.94f  }, { -78.6f , 0.01f , -8.94f  }, { 0 , 0 , 0 }, { 0 , 0 , 0 }, { 0 , 0 , 0 } },   //Question 1
+                                      { { -800.6f , 0.01f , -11.57f }, { -78.6f , 0.01f , -11.57f }, { 0 , 0 , 0 }, { 0 , 0 , 0 }, { 0 , 0 , 0 } },   //Question 2
+                                      { { -800.6f , 0.01f , -15.65f }, { -78.6f , 0.01f , -15.65f }, { 0 , 0 , 0 }, { 0 , 0 , 0 }, { 0 , 0 , 0 } } }; //Question 3
         public GameObject coin;
 
         

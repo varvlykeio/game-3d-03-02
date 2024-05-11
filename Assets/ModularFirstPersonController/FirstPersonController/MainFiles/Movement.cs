@@ -51,7 +51,7 @@ public class Movement : MonoBehaviour{
       }
       if(levelcheck4 == true) {
 
-        Cam.transform.position = new Vector3(-50, 4, -17);
+        Cam.transform.position = new Vector3(-25.84f, 1.23f, -4.64f);
         a = 1;
 
       }

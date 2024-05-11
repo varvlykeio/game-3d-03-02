@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using MyVars;
 using OWDoor;
+using UnityEditor;
 
 namespace Doors {
 public class Door : MonoBehaviour
@@ -30,6 +31,7 @@ public class Door : MonoBehaviour
     private void Awake()
     {
         StartPosition = transform.position;
+    
     }
     
      public void OnTriggerEnter(){
