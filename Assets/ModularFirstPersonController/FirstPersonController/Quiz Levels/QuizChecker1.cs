@@ -31,7 +31,7 @@ namespace QuizCol {
                 if(Input.GetKeyDown("i")){
 
                     pusher1 = true;
-                    Invoke("deletos", 2f);
+                   
 
                 }
             }
