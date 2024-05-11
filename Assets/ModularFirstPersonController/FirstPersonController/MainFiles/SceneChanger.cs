@@ -20,30 +20,44 @@ using UnityEngine.Timeline;
 // Scene 2: Geometry Level
 
 
+// Scene 1 Geometry
+// Scene 5 Math
+// Scene 4 Coding
+// Scene 3 History
+// Scene 2 Language
+
+
 
 
 public class SceneChanger : MonoBehaviour {
     public Scene Coding;
     public GameObject StartingUI= null;
 
+    public void Update(){
+        Debug.Log(SceneManager.GetActiveScene().buildIndex);
+
+    }
+
+    
     public void Button1(){
         SceneManager.UnloadSceneAsync(0);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(5);
+        
     }
     public void Button2(){
         SceneManager.UnloadSceneAsync(0);
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(4);
     }
     public void Button3(){
         SceneManager.UnloadSceneAsync(0);
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(3);
     }
     public void Button4(){
         SceneManager.UnloadSceneAsync(0);
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
     }
     public void Button5(){
         SceneManager.UnloadSceneAsync(0);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 }

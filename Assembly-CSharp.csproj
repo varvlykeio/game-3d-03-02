@@ -91,6 +91,7 @@
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\OneWayDoors.cs" />
     <Compile Include="Assets\Movement\Common Scripts\Turn_Move.cs" />
     <Compile Include="Assets\ModularFirstPersonController\Mono\AnswerData.cs" />
+    <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\MovementMath.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\Restarter.cs" />
     <Compile Include="Assets\PyroParticles\Prefab\Script\FireProjectileScript.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\MainFiles\RestartTrigger.cs" />
