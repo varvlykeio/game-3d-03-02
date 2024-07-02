@@ -20,7 +20,7 @@ namespace GameEv{
         public                  ScoreUpdatedCallback                ScoreUpdated                    = null;
 
         [HideInInspector]
-        public                  int                                 level                           = 1;
+        public                  int                                 level                           = 0;
         public const            int                                 maxLevel                        = 4;
 
         [HideInInspector]
