@@ -33,11 +33,6 @@ namespace GameEv{
         
         //
         
-        public void Awake(){
-
-            TotalScore = 0;
-        
-        }
     }
    
 }

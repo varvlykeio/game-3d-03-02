@@ -119,7 +119,7 @@ namespace Gamemanagera{
 
                 events.StartupHighscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
 
-                timerDefaultColor = timerText.color;
+                timerDefaultColor =  Color.white;
                 LoadData();
 
                 timerStateParaHash = Animator.StringToHash("TimerState");
@@ -326,8 +326,8 @@ namespace Gamemanagera{
         /// </summary>
         void LoadData()
         {
-            var path = Path.Combine(GameUtility.FileDir, GameUtility.FileName + events.level + ".xml");
-            //var path = Path.Combine(GameUtility.FileDir,"Q3.xml");
+            //var path = Path.Combine(GameUtility.FileDir, GameUtility.FileName + events.level + ".xml");
+            var path = Path.Combine(GameUtility.FileDir,"Q3.xml");
             data = Data.Fetch(path);
         }
 

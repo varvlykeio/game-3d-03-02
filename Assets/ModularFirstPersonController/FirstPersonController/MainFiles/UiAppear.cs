@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 //using TMPro;
 
-//εμφανιση του i στον ανεμιστηρα 
+//εμφανιση του i στον ΑΤΜ 
 //το ιδιο αρχειο και για πορτες
 
 public class UiAppear : MonoBehaviour

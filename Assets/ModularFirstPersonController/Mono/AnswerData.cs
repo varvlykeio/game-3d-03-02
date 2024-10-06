@@ -62,19 +62,30 @@ public class AnswerData : MonoBehaviour {
     {
         Checked = !Checked;
         UpdateUI();
-
+        Debug.Log("HOOHEE");
         if (events.UpdateQuestionAnswer != null)
         {
+            Debug.Log("HEEHEE");
             events.UpdateQuestionAnswer(this);
         }
     }
     /// <summary>
     /// Function that is called to update UI.
     /// </summary>
+    /// 
+
+    public void SendHelp(){
+        Debug.Log("KKEKEKEKEKEKEK");
+    }
     void UpdateUI ()
     {
-        if (toggle == null) return;
 
-        toggle.sprite = (Checked) ? checkedToggle : uncheckedToggle;
+        
+        if (toggle == null) {
+             
+        return;
+        }
+        
+        toggle.sprite = (Checked) ? checkedToggle : uncheckedToggle; 
     }
 }

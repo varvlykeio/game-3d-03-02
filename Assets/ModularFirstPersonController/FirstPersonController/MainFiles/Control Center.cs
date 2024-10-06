@@ -42,8 +42,8 @@ namespace MyVars{
                                   //                                   QuestionR[ Question , level , x/y/z ]
                                   //              Level 1           ,            Level 2          ,     Level 3   ,    Level 4   ,   Level 5
                                   //        x    ,   y   ,    z           x    ,   y   ,    z          x , y , z      x , y , z      x , y , z
-        public float[,,] QuestionR ={ { { -800.6f , 0.01f , -8.94f  }, { -78.6f , 0.01f , -8.94f  }, { 0 , 0 , 0 }, { 0 , 0 , 0 }, { 0 , 0 , 0 } },   //Question 1
-                                      { { -800.6f , 0.01f , -11.57f }, { -78.6f , 0.01f , -11.57f }, { 0 , 0 , 0 }, { 0 , 0 , 0 }, { 0 , 0 , 0 } },   //Question 2
+        public float[,,] QuestionR ={ { { -82f , 0f , -12f  }, { -211.6f , 0f , 53f  }, { 0 , 0 , 0 }, { 0 , 0 , 0 }, { 0 , 0 , 0 } },   //Question 1
+                                      { { -211.6f , 0f , 53f }, { -78.6f , 0.01f , -11.57f }, { 0 , 0 , 0 }, { 0 , 0 , 0 }, { 0 , 0 , 0 } },   //Question 2
                                       { { -800.6f , 0.01f , -15.65f }, { -78.6f , 0.01f , -15.65f }, { 0 , 0 , 0 }, { 0 , 0 , 0 }, { 0 , 0 , 0 } } }; //Question 3
         public GameObject coin;
 
@@ -128,7 +128,7 @@ namespace MyVars{
             GameObject tempObj4 = GameObject.Find("Control Center");
             scriptInstance4 = tempObj4.GetComponent<SceneChanger>();
             
-            level = events.level;
+            //level = events.level;
             
     }
 
@@ -138,6 +138,10 @@ namespace MyVars{
             UnityEngine.Quaternion CoinQ = new UnityEngine.Quaternion(0,0,0,0);
             Instantiate(coin, randCoinPos, CoinQ);
 
+        }
+
+        public void OnApplicationQuit(){       
+           events.TotalScore = 0;
         }
     }
 }

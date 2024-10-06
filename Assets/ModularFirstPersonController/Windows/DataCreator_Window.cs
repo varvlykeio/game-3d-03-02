@@ -23,8 +23,7 @@ public class DataCreator_Window : EditorWindow
     }
 
     [MenuItem("Game/Data Creator")]
-    public static void OpenWindow()
-    {
+    public static void OpenWindow(){
         var window = EditorWindow.GetWindow<DataCreator_Window>("Creator");
 
         window.minSize = new Vector2(510.0f, 344.0f);
