@@ -52,7 +52,6 @@ namespace QuizVars{
 				Content.SetActive(true);
 				Resolution.SetActive(true);
 				FirstRun = true;
-
 				QuizStart = true;
 					
 			}
