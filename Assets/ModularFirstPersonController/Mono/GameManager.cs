@@ -194,6 +194,10 @@ namespace Gamemanagera{
             }
         }
 
+        public void CursorLockOnQuizEnd(){
+            events.CursorLock = true;
+        }
+
         /// <summary>
         /// Function that is called to accept picked answers and check/display the result.
         /// </summary>

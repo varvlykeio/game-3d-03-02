@@ -28,8 +28,8 @@ namespace GameEv{
         [HideInInspector]
         public                  int                                 StartupHighscore                = 0;
         public                  int                                 TotalScore                      = 0; 
-
-        
+        public                  int                                 currentlevel                    = 0;    
+        public                  bool                                CursorLock                      = true;
         
         //
         

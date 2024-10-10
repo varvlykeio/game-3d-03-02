@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pusher1: 0
+  events: {fileID: 11400000, guid: 8e0c26d6986631643bcc9fe8626c36ae, type: 2}
 --- !u!114 &1239901351694790708
 MonoBehaviour:
   m_ObjectHideFlags: 0

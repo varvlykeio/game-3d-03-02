@@ -19,11 +19,11 @@ namespace MyVars{
         public bool Maze4 = true;
         public bool diadromos = true; // Checks if the player has entered a diadromos level to spawn the coins
         public bool changelevel = false; // Checks whether the level has changed to spawn Question machines. 
-        public int level ;
+        public int level;
         public int levelch = -1;
         public int Question;
 
-        [SerializeField]    GameEvents          events                  = null;
+        [SerializeField]   public  GameEvents          events                  = null;
 
 
 
@@ -55,7 +55,7 @@ namespace MyVars{
         public void Start(){
                            
             
-            level = events.level;
+            level = events.currentlevel;
             if( level != levelch ){
 
                 levelch = level;
@@ -142,7 +142,11 @@ namespace MyVars{
 
         public void OnApplicationQuit(){       
            events.TotalScore = 0;
+           events.currentlevel = 0;
+           events.CursorLock = true;
         }
+
+       
     }
 }
 

@@ -10,6 +10,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using QuizVars;
 using QuizCol;
+using GameEv;
+using UnityEditor.PackageManager;
+using MyVars;
+
+
 
 
 #if UNITY_EDITOR
@@ -137,6 +142,7 @@ public class FirstPersonController : MonoBehaviour
     private float timer = 0;
 
     #endregion
+    public GameEvents events;
 
     private void Awake()
     {
@@ -209,27 +215,29 @@ public class FirstPersonController : MonoBehaviour
     }
 
     float camRotation;
-    Quiz scriptInstance = null; // Φτιάχνουμε ένα Instance της κλάσσης στην οποία έχουμε τις μεταβλητές. Πρέπει να έχουμε περικλείσει την κλάση
-                                // σε namespace και να έχουμε γράψει using (όνομα namespace) ,χωρίς τα (),  όπως φαίνεται στην αρχή του κώδικα, γραμμή 12
+
+   
+    MyVarsClass scriptInstance = null; // Φτιάχνουμε ένα Instance της κλάσσης στην οποία έχουμε τις μεταβλητές. Πρέπει να έχουμε περικλείσει την κλάση
+                            // σε namespace και να έχουμε γράψει using (όνομα namespace) ,χωρίς τα (),  όπως φαίνεται στην αρχή του κώδικα, γραμμή 12
                                 // Το instance πρέπει να είναι της μορφής "όνομα κλάσης" "ονομα instance" = null;
     private void Update()
     {
-        bool quiz;
 
-        GameObject tempObj = GameObject.Find("FirstPersonController");  //Τώρα πρέπει να πουμε 
-                                                                        //GameObject "όνομα που θέλουμε να δώσουμε" = GameObject("Όνομα του gameobject που έχουμε επισυνάψει το αρχείο")
-        scriptInstance = tempObj.GetComponent<Quiz>(); // "όνομα του instance που έχουμε φτιάξει" = "ονομα του object".GetComponent<"όνομα κλάσης">();
-
-        quiz = scriptInstance.CursorLock; // "μεταβλητή του τωρινού αρχείου" = "ονομα του instance που έχουμε φτιάξει"."όνομα μεταβλητής που θέλουμε να μεταφέρουμε"
-        if (quiz == false){
+        GameObject tempObj = GameObject.Find("Control Center"); //Τώρα πρέπει να πουμε 
+                                                                //GameObject "όνομα που θέλουμε να δώσουμε" = GameObject("Όνομα του gameobject που έχουμε επισυνάψει το αρχείο")
+        scriptInstance = tempObj.GetComponent<MyVarsClass>(); // "όνομα του instance που έχουμε φτιάξει" = "ονομα του object".GetComponent<"όνομα κλάσης">();
+        events = scriptInstance.events;
+        // quiz = events.CursorLock; // "μεταβλητή του τωρινού αρχείου" = "ονομα του instance που έχουμε φτιάξει"."όνομα μεταβλητής που θέλουμε να μεταφέρουμε"  
+       
+       //Debug.Log(events.CursorLock);
+        if (events.CursorLock == false){
             Cursor.lockState = CursorLockMode.None;
             cameraCanMove = false;
         }
         else {
-            Cursor.lockState = CursorLockMode.None; 
+            Cursor.lockState = CursorLockMode.Locked; 
             cameraCanMove = true; 
         }
-
 
         #region Camera
 
@@ -577,23 +585,24 @@ public class FirstPersonController : MonoBehaviour
     public override void OnInspectorGUI()
     {
         SerFPC.Update();
-
+        
         EditorGUILayout.Space();
         GUILayout.Label("Modular First Person Controller", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Bold, fontSize = 16 });
         GUILayout.Label("By Jess Case", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Normal, fontSize = 12 });
         GUILayout.Label("version 1.0.1", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Normal, fontSize = 12 });
         EditorGUILayout.Space();
 
-        #region Camera Setup
+
+       
 
         EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
         GUILayout.Label("Camera Setup", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Bold, fontSize = 13 }, GUILayout.ExpandWidth(true));
         EditorGUILayout.Space();
-
+       
         fpc.playerCamera = (Camera)EditorGUILayout.ObjectField(new GUIContent("Camera", "Camera attached to the controller."), fpc.playerCamera, typeof(Camera), true);
         fpc.fov = EditorGUILayout.Slider(new GUIContent("Field of View", "The camera’s view angle. Changes the player camera directly."), fpc.fov, fpc.zoomFOV, 179f);
         //fpc.cameraCanMove = EditorGUILayout.ToggleLeft(new GUIContent("Enable Camera Rotation", "Determines if the camera is allowed to move."), fpc.cameraCanMove);
-
+        
         GUI.enabled = fpc.cameraCanMove;
         fpc.invertCamera = EditorGUILayout.ToggleLeft(new GUIContent("Invert Camera Rotation", "Inverts the up and down movement of the camera."), fpc.invertCamera);
         fpc.mouseSensitivity = EditorGUILayout.Slider(new GUIContent("Look Sensitivity", "Determines how sensitive the mouse movement is."), fpc.mouseSensitivity, .1f, 10f);
@@ -636,7 +645,6 @@ public class FirstPersonController : MonoBehaviour
 
         #endregion
 
-        #endregion
 
         #region Movement Setup
 
@@ -756,7 +764,10 @@ public class FirstPersonController : MonoBehaviour
         fpc.bobAmount = EditorGUILayout.Vector3Field(new GUIContent("Bob Amount", "Determines the amount the joint moves in both directions on every axes."), fpc.bobAmount);
         GUI.enabled = true;
 
-        #endregion
+        #endregion 
+        
+        
+        #region Camera Setup
 
         //Sets any changes from the prefab
         if(GUI.changed)
@@ -765,6 +776,15 @@ public class FirstPersonController : MonoBehaviour
             Undo.RecordObject(fpc, "FPC Change");
             SerFPC.ApplyModifiedProperties();
         }
+        #endregion
+
+        #region Events Setup
+        EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
+        GUILayout.Label("Events (Variable Storer)", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Bold, fontSize = 13 }, GUILayout.ExpandWidth(true));
+        GUILayout.Label("", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Bold, fontSize = 13 }, GUILayout.ExpandWidth(true));
+        fpc.events = (GameEvents)EditorGUILayout.ObjectField(new GUIContent("Events", "Variable Storer"), fpc.events, typeof(GameEvents), true);
+        
+        #endregion
     }
     }
 

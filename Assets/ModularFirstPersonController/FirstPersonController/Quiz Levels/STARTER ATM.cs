@@ -6,14 +6,15 @@ using UnityEditor.Build.Content;
 using System.Data.Common;
 using JetBrains.Annotations;
 using System;
+using GameEv;
 
 
 namespace StarterATM {
 
     public class StrtATM : MonoBehaviour{
 
+        [SerializeField]    GameEvents          events                  = null;
         private bool activate;
-        public bool pusher1;
 
         public GameObject StarterCanvas;
 
@@ -39,10 +40,12 @@ namespace StarterATM {
                 if(Input.GetKeyDown("i")){
 
                     StarterCanvas.SetActive(true);
-                   
+                    events.CursorLock = false;	
+                    
 
                 }
             }
+            
         }
 
         

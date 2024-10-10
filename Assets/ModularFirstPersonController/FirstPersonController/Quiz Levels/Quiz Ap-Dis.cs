@@ -4,19 +4,22 @@ using System.Collections;
 using MyVars;
 using UnityEditor.Build.Content;
 using QuizCol;
+using StarterATM;
+using GameEv;
+using Unity.VisualScripting.Dependencies.Sqlite;
 
 
 namespace QuizVars{
 	public class Quiz : MonoBehaviour {
 		public GameObject Content;
 		public GameObject Resolution;
+		[SerializeField]    GameEvents          events                  = null;
 		public bool FirstRun;
 		public bool CursorLock;
 		public bool QuizStart;
 		public              bool                levelcheck1             = false;
 		public              bool                levelcheck2             = false;
 		public              bool                levelcheck3             = false;
-
 		void OnEnable() {
 
 			Content.SetActive(false);
@@ -41,15 +44,14 @@ namespace QuizVars{
 			levelcheck1 = scriptInstance1.pusher1;
 			levelcheck2 = scriptInstance2.pusher2;
 			levelcheck3 = scriptInstance3.pusher3;
-		
+
+	
 			if (levelcheck1 == true || levelcheck2 == true || levelcheck3 == true) {
 
 
 				Content.SetActive(true);
 				Resolution.SetActive(true);
 				FirstRun = true;
-				
-				CursorLock = false;
 
 				QuizStart = true;
 					

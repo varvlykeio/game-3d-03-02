@@ -31,33 +31,39 @@ namespace Scenes{
         [SerializeField]    GameEvents          events                  = null;
 
         public void Start(){
-           events.level = 0;
+           events.currentlevel = 0;
         }
         
         public void Button1(){ //Math
             SceneManager.UnloadSceneAsync(0);
             SceneManager.LoadScene(5);
-            events.level = 1;        
+            events.currentlevel = 1; 
+            events.CursorLock = true;  
+            Debug.Log("IN");    
         }
         public void Button2(){
             SceneManager.UnloadSceneAsync(0);
             SceneManager.LoadScene(4);
-            events.level = 2;
+            events.currentlevel = 2;
+            events.CursorLock = true;  
         }
         public void Button3(){//History
             SceneManager.UnloadSceneAsync(0);
             SceneManager.LoadScene(3);
-            events.level = 3;
+            events.currentlevel = 3;
+            events.CursorLock = true;  
         }
         public void Button4(){ //Language
             SceneManager.UnloadSceneAsync(0);
             SceneManager.LoadScene(2);
-            events.level = 4;
+            events.currentlevel = 4;
+            events.CursorLock = true;  
         }
         public void Button5(){ //Geometry
             SceneManager.UnloadSceneAsync(0);
             SceneManager.LoadScene(1);
-            events.level = 5;
+            events.currentlevel = 5;
+            events.CursorLock = true;  
         }
     }
 }

@@ -6,6 +6,7 @@ using UnityEditor.Build.Content;
 using System.Data.Common;
 using JetBrains.Annotations;
 using System;
+using GameEv;
 
 
 namespace QuizCol {
@@ -14,6 +15,7 @@ namespace QuizCol {
 
         private bool activate;
         public bool pusher2;
+           [SerializeField]    GameEvents          events                  = null;
        
 
 
@@ -32,7 +34,7 @@ namespace QuizCol {
                 if(Input.GetKeyDown("i")){
 
                     pusher2 = true;
-                    
+                      events.CursorLock = false; 
                 }
             }
         }
