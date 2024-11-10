@@ -201,6 +201,7 @@ namespace Gamemanagera{
         /// <summary>
         /// Function that is called to accept picked answers and check/display the result.
         /// </summary>
+        /// //
         public void Accept()
         {
             UpdateTimer(false);
