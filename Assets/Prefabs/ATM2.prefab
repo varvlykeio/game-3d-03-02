@@ -12,11 +12,10 @@ GameObject:
   - component: {fileID: 3997307303788487501}
   - component: {fileID: 7849550142157164074}
   - component: {fileID: 13492723330047372}
-  - component: {fileID: 6952346470829421628}
+  - component: {fileID: 1996053309151936751}
   - component: {fileID: 5338637492578078192}
   - component: {fileID: 2082556436161476159}
   - component: {fileID: 380032180512666964}
-  - component: {fileID: 1996053309151936751}
   m_Layer: 0
   m_Name: ATM2
   m_TagString: ATM - Tag
@@ -111,7 +110,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 9c9c01ea5d9bcf74db52c9818f202508, type: 3}
---- !u!114 &6952346470829421628
+--- !u!114 &1996053309151936751
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,10 +119,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5113101889598903647}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d6817ddcf5a4c84b9bb8a3641ddca21, type: 3}
+  m_Script: {fileID: 11500000, guid: 595ca8f7d0848df459506390e8c839b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pusher1: 0
+  pusher2: 0
   events: {fileID: 11400000, guid: 8e0c26d6986631643bcc9fe8626c36ae, type: 2}
 --- !u!114 &5338637492578078192
 MonoBehaviour:
@@ -181,17 +180,3 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 9c9c01ea5d9bcf74db52c9818f202508, type: 3}
---- !u!114 &1996053309151936751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5113101889598903647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 595ca8f7d0848df459506390e8c839b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pusher2: 0
-  events: {fileID: 0}

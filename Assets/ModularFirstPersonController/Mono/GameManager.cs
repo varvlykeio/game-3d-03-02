@@ -93,10 +93,10 @@ namespace Gamemanagera{
         {
             /*GameObject tempObj = GameObject.Find("Control Center");
             score = tempObj.GetComponent<MyVarsClass>();*/
-            GameObject tempObj1 = GameObject.Find("ATM1(Clone)");
-            scriptInstance1 = tempObj1.GetComponent<QuizCols1>();
             GameObject tempObj2 = GameObject.Find("ATM2(Clone)");
             scriptInstance2 = tempObj2.GetComponent<QuizCols2>();
+            GameObject tempObj1 = GameObject.Find("ATM1(Clone)");
+            scriptInstance1 = tempObj1.GetComponent<QuizCols1>();
             GameObject tempObj3 = GameObject.Find("ATM3(Clone)");
             scriptInstance3 = tempObj3.GetComponent<QuizCols3>();
             

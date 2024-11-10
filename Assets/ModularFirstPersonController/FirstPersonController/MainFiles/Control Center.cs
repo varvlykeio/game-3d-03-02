@@ -54,6 +54,27 @@ namespace MyVars{
 
         public void Start(){
                            
+
+            
+            if (changelevel == true){
+                UnityEngine.Debug.Log("ping");
+                //for(Question = 0; Question >= 2; Question++){   SpawnQuestions(level,Question); }  s  
+                //Doesn't work with the for(), for some reason...
+
+                UnityEngine.Vector3  QuestionPos = new UnityEngine.Vector3(QuestionR[0,level,0],QuestionR[0,level,1],QuestionR[0,level,2]);
+                UnityEngine.Quaternion QuestionQ = new UnityEngine.Quaternion(0,0,0,0);
+                Instantiate(QuestionList[Question], QuestionPos, QuestionQ);
+                UnityEngine.Vector3  QuestionPos2 = new UnityEngine.Vector3(QuestionR[1,level,0],QuestionR[1,level,1],QuestionR[1,level,2]);
+                UnityEngine.Quaternion QuestionQ2 = new UnityEngine.Quaternion(0,0,0,0);
+                Instantiate(QuestionList[1], QuestionPos2, QuestionQ2);
+                UnityEngine.Vector3  QuestionPos3 = new UnityEngine.Vector3(QuestionR[2,level,0],QuestionR[2,level,1],QuestionR[2,level,2]);
+                UnityEngine.Quaternion QuestionQ3= new UnityEngine.Quaternion(0,0,0,0);
+                Instantiate(QuestionList[2], QuestionPos3, QuestionQ3);
+                    
+
+                changelevel = false;
+                UnityEngine.Debug.Log("ping");
+            }
             
             level = events.currentlevel;
             if( level != levelch ){
@@ -96,25 +117,6 @@ namespace MyVars{
 
             #region Questions
 
-            if (changelevel == true){
-                UnityEngine.Debug.Log("ping");
-                //for(Question = 0; Question >= 2; Question++){   SpawnQuestions(level,Question); }  s  
-                //Doesn't work with the for(), for some reason...
-
-                UnityEngine.Vector3  QuestionPos = new UnityEngine.Vector3(QuestionR[0,level,0],QuestionR[0,level,1],QuestionR[0,level,2]);
-                UnityEngine.Quaternion QuestionQ = new UnityEngine.Quaternion(0,0,0,0);
-                Instantiate(QuestionList[Question], QuestionPos, QuestionQ);
-                UnityEngine.Vector3  QuestionPos2 = new UnityEngine.Vector3(QuestionR[1,level,0],QuestionR[1,level,1],QuestionR[1,level,2]);
-                UnityEngine.Quaternion QuestionQ2 = new UnityEngine.Quaternion(0,0,0,0);
-                Instantiate(QuestionList[1], QuestionPos2, QuestionQ2);
-                UnityEngine.Vector3  QuestionPos3 = new UnityEngine.Vector3(QuestionR[2,level,0],QuestionR[2,level,1],QuestionR[2,level,2]);
-                UnityEngine.Quaternion QuestionQ3= new UnityEngine.Quaternion(0,0,0,0);
-                Instantiate(QuestionList[2], QuestionPos3, QuestionQ3);
-                    
-
-                changelevel = false;
-                UnityEngine.Debug.Log("ping");
-            }
             #endregion Questions
 
 

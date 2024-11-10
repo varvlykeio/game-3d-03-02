@@ -34,7 +34,7 @@ namespace QuizCol {
                 if(Input.GetKeyDown("i")){
 
                     pusher2 = true;
-                      events.CursorLock = false; 
+                    events.CursorLock = false; 
                 }
             }
         }

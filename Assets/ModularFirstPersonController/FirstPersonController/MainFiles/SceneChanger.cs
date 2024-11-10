@@ -26,21 +26,44 @@ using UnityEditor.PackageManager;
 namespace Scenes{
     public class SceneChanger : MonoBehaviour {
         public Scene Coding;
+        bool m_SceneLoaded;
         public GameObject StartingUI= null;
         public int level;
         [SerializeField]    GameEvents          events                  = null;
+        
 
         public void Start(){
            events.currentlevel = 0;
         }
         
-        public void Button1(){ //Math
-            SceneManager.UnloadSceneAsync(0);
+       /* public void Button1(){ //Math  
             SceneManager.LoadScene(5);
-            events.currentlevel = 1; 
-            events.CursorLock = true;  
+            SceneManager.UnloadSceneAsync(0);
+             
             Debug.Log("IN");    
+        }*/
+
+
+        public void Button1(){
+        // Check that the second Scene hasn't been added yet
+        if (m_SceneLoaded == false)
+        {
+            // Loads the second Scene
+            SceneManager.LoadScene("Math Level", LoadSceneMode.Additive);
+
+            // Outputs the name of the current active Scene.
+            // Notice it still outputs the name of the first Scene
+            Debug.Log("Active Scene : " + SceneManager.GetActiveScene().name);
+
+            // The Scene has been loaded, exit this method
+            m_SceneLoaded = true;
+            events.currentlevel = 1; 
+            events.CursorLock = true;
+
+            
+             
         }
+    }
         public void Button2(){
             SceneManager.UnloadSceneAsync(0);
             SceneManager.LoadScene(4);

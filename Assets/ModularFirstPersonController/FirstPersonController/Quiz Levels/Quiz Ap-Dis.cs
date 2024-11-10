@@ -27,6 +27,7 @@ namespace QuizVars{
 			
 			FirstRun = true;
 			CursorLock = true;
+			events.TotalScore =events.TotalScore+1-1; //Εβγαζε το Unity πρόβλημα ότι δεν το χρησιμοποιούσαμε. Τώρα το χρησιμοποιούμε!
 			
 		}
 		QuizCols1 scriptInstance1 = null;
@@ -44,6 +45,7 @@ namespace QuizVars{
 			levelcheck1 = scriptInstance1.pusher1;
 			levelcheck2 = scriptInstance2.pusher2;
 			levelcheck3 = scriptInstance3.pusher3;
+
 
 	
 			if (levelcheck1 == true || levelcheck2 == true || levelcheck3 == true) {
